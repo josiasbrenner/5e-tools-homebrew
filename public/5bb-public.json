@@ -1,0 +1,285 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "5BBPublic",
+        "abbreviation": "5BBPublic",
+        "full": "5 Banners Burning",
+        "version": "0.1.0",
+        "authors": ["Josias Brenner"],
+        "convertedBy": ["Josias Brenner"],
+        "color": "b8411a"
+      }
+    ],
+    "dateAdded": 1776156420,
+    "dateLastModified": 1776613867,
+    "edition": "one",
+    "status": "wip"
+  },
+  "item": [
+    {
+      "name": "Pump-Action Crossbow",
+      "source": "5BBPublic",
+      "type": "R",
+      "rarity": "none",
+      "weight": 12,
+      "value": 10000,
+      "weaponCategory": "simple",
+      "property": ["A", "LD", "2H"],
+      "mastery": ["Push"],
+      "range": "30/90",
+      "dmg1": "1d10",
+      "dmgType": "P",
+      "ammoType": "bolt"
+    },
+    {
+      "name": "Brandur's Sword Hilt",
+      "source": "5BBPublic",
+      "type": "M",
+      "rarity": "very rare",
+      "reqAttune": true,
+      "weight": 1,
+      "weaponCategory": "martial",
+      "property": ["V"],
+      "dmg1": "1d8",
+      "dmgType": "S",
+      "dmg2": "1d10",
+      "baseItem": "longsword|xphb",
+      "bonusWeapon": "+1",
+      "focus": ["Warlock"],
+      "entries": [
+        "You have a +1 bonus to attack and damage rolls made with this magic weapon.",
+        {
+          "type": "entries",
+          "name": "Broken Sword",
+          "entries": [
+            "This weapon functions as a {@variantrule Spellcasting Focus |XPHB} and a Warlock's pact weapon.",
+            "As a {@variantrule Bonus Action |XPHB}, you can conjure a spectral blade from the hilt to attack with or dismiss it."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Multielementalism",
+          "entries": [
+            "When you hit a creature with this weapon, you can choose to deal one of the following damage types instead of the weapons normal damage: acid, cold, fire, lightning, or thunder."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Utak's Warhammer",
+      "source": "5BBPublic",
+      "type": "M",
+      "rarity": "rare",
+      "weight": 5,
+      "weaponCategory": "martial",
+      "property": ["V"],
+      "dmg1": "1d8",
+      "dmgType": "B",
+      "dmg2": "1d10",
+      "baseItem": "warhammer|xphb",
+      "bonusWeapon": "+1",
+      "entries": ["You have a +1 bonus to attack and damage rolls made with this magic weapon."]
+    },
+    {
+      "name": "Silencari Dagger",
+      "source": "5BBPublic",
+      "type": "M",
+      "rarity": "rare",
+      "weight": 1,
+      "weaponCategory": "martial",
+      "property": ["F", "L", "T"],
+      "mastery": ["Nick|XPHB"],
+      "range": "30/60",
+      "dmg1": "1d6",
+      "dmgType": "P",
+      "bonusWeapon": "+1",
+      "entries": ["You have a +1 bonus to attack and damage rolls made with this magic weapon."]
+    },
+    {
+      "name": "Staff of Enthrallment",
+      "source": "5BBPublic",
+      "type": "M",
+      "rarity": "rare",
+      "weight": 4,
+      "weaponCategory": "simple",
+      "reqAttune": "by a Spellcaster",
+      "property": ["V"],
+      "mastery": ["Topple|XPHB"],
+      "dmg1": "1d6",
+      "dmgType": "B",
+      "dmg2": "1d8",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Mind Controlling",
+          "entries": [
+            "You can cast the {@spell Mind Sliver|XPHB} cantrip from this staff using your spellcasting or pact magic feature."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Enthralling",
+          "entries": [
+            "You can add {@dice 1d4} to any {@skill Persuasion|XPHB} you make. On a 4, you can no longer use this feature until you finish a {@variantrule Short Rest|XPHB}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Parrying",
+          "entries": [
+            "When you are hit with a melee attack roll while wielding this staff with two hands, you can take a {@variantrule Reaction|XPHB} to add 2 to your AC for that attack, potentially causing the attack to miss."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Homing Compasses",
+      "source": "5BBPublic",
+      "wondrous": true,
+      "rarity": "uncommon",
+      "entries": [
+        "Homing Compasses come in pairs, with each pointing towards the other one as long as both are on the same plane of existence."
+      ]
+    },
+    {
+      "name": "Bag of Ficklesand",
+      "source": "5BBPublic",
+      "wondrous": true,
+      "rarity": "uncommon",
+      "weight": 2,
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Heavy Sand",
+          "entries": [
+            "While the bag can hear you, you can make a {@skill Performance|XPHB} check (DC 10) as a {@variantrule Bonus Action|XPHB} to convince the bag of sand to increase its weight to 200 lb. or decrease its weight back to 2 lb.."
+          ]
+        }
+      ]
+    }
+  ],
+  "feat": [
+    {
+      "name": "Savage Attacker (5BBPublic)",
+      "source": "5BBPublic",
+      "category": "O",
+      "entries": [
+        "When you hit with a weapon, you can reroll any 1 or 2 on a damage die and must use the new roll, even if the new roll is a 1 or a 2."
+      ]
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Silencari Assassin",
+      "shortName": "Silencari Assassin",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassFeatures": [
+        "Silencari Assassin|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic",
+        "Infiltration Expertise|Rogue|XPHB|Silencari Assassin|5BBPublic|9|5BBPublic",
+        "Envenom Weapons|Rogue|XPHB|Silencari Assassin|5BBPublic|13|5BBPublic",
+        "Death Strike|Rogue|XPHB|Silencari Assassin|5BBPublic|17|5BBPublic"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Silencari Assassin",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "{@i Practice the Grim Art of Death}",
+        "An Assassin's training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Assassinate|Rogue|XPHB|Assassin|XPHB|3|XPHB"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Assassin's Tools|Rogue|XPHB|Assassin|XPHB|3|XPHB"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Get in and Get out|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Keen Weapon Training|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
+        }
+      ]
+    },
+    {
+      "name": "Get in and Get out",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "When you attack with a melee weapon, your Sneak Attack uses d8 damage dice instead of d6 damage dice."
+      ]
+    },
+    {
+      "name": "Keen Weapon Training",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": ["Your weapon attacks score a critical hit on a roll of 19 or 20 on the d20."]
+    },
+    {
+      "name": "Infiltration Expertise",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 9,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Infiltration Expertise|Rogue|XPHB|Assassin|XPHB|9|XPHB"
+        }
+      ]
+    },
+    {
+      "name": "Envenom Weapons",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 13,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Envenom Weapons|Rogue|XPHB|Assassin|XPHB|13|XPHB"
+        }
+      ]
+    },
+    {
+      "name": "Death Strike",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 17,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Death Strike|Rogue|XPHB|Assassin|XPHB|17|XPHB"
+        }
+      ]
+    }
+  ]
+}
