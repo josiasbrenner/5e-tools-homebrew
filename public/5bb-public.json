@@ -3,7 +3,7 @@
     "sources": [
       {
         "json": "5BBPublic",
-        "abbreviation": "5BBPublic",
+        "abbreviation": "5BB",
         "full": "5 Banners Burning",
         "version": "0.1.0",
         "authors": ["Josias Brenner"],
@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1776613867,
+    "dateLastModified": 1776615637,
     "edition": "one",
     "status": "wip"
   },

@@ -4,8 +4,9 @@ Host file locally with CORS headers
 uv run python cors_server.py
 ```
 
-Upgrade timestamp in `./private/5bb-private.json` with the following command:
+Upgrade timestamp with the following command:
 
 ```bash
 sed -E -i '' "s/(\"dateLastModified\"[[:space:]]*:[[:space:]]*)[0-9]+/\1$(date +%s)/" ./private/5bb-private.json
+sed -E -i '' "s/(\"dateLastModified\"[[:space:]]*:[[:space:]]*)[0-9]+/\1$(date +%s)/" ./public/5bb-public.json
 ```
