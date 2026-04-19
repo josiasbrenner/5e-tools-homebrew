@@ -10,3 +10,8 @@ Upgrade timestamp with the following command:
 sed -E -i '' "s/(\"dateLastModified\"[[:space:]]*:[[:space:]]*)[0-9]+/\1$(date +%s)/" ./private/5bb-private.json
 sed -E -i '' "s/(\"dateLastModified\"[[:space:]]*:[[:space:]]*)[0-9]+/\1$(date +%s)/" ./public/5bb-public.json
 ```
+
+Add homebrew using
+
+- `https://raw.githubusercontent.com/josiasbrenner/5e-tools-homebrew/refs/heads/main/private/5bb-private.json`
+- `https://raw.githubusercontent.com/josiasbrenner/5e-tools-homebrew/refs/heads/main/public/5bb-public.json`
