@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1776618263,
+    "dateLastModified": 1776622088,
     "edition": "one",
     "status": "wip"
   },
@@ -254,6 +254,681 @@
       "category": "O",
       "entries": [
         "When you hit with a weapon, you can reroll any 1 or 2 on a damage die and must use the new roll, even if the new roll is a 1 or a 2."
+      ]
+    }
+  ],
+  "class": [
+    {
+      "name": "Shapeshifter",
+      "source": "5BBPublic",
+      "primaryAbility": [{ "cha": true }],
+      "hd": { "number": 1, "faces": 8 },
+      "proficiency": ["int", "cha"],
+      "spellcastingAbility": "cha",
+      "casterProgression": "1/2",
+      "preparedSpellsProgression": [2, 3, 4, 5, 6, 6, 7, 7, 9, 9, 10, 10, 11, 11, 12, 12, 14, 14, 15, 15],
+      "preparedSpellsChange": "restLong",
+      "cantripProgression": [2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": ["speak with animals|xphb"],
+            "2": ["find familiar|xphb"],
+            "3": ["cure wounds|xphb", "starry wisp|xphb"],
+            "5": ["moonbeam|xphb"],
+            "9": ["conjure animals|xphb"],
+            "13": ["fount of moonlight|xphb"],
+            "17": ["mass cure wounds|xphb"]
+          }
+        }
+      ],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": ["EB"],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": ["light", "shield"],
+        "weapons": ["simple"],
+        "tools": ["{@item Herbalism Kit|XPHB}"],
+        "toolProficiencies": [
+          {
+            "herbalism kit": true
+          }
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "animal handling",
+                "insight",
+                "medicine",
+                "nature",
+                "perception",
+                "religion",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [{ "value": 5000 }]
+          }
+        ],
+        "entries": ["50 GP"]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": ["light", "shield"]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Wild Shape",
+            "{@filter Cantrips|spells|level=0|class=Druid}",
+            "{@filter Prepared Spells|spells|level=!0|class=Druid}"
+          ],
+          "rows": [
+            [0, 2, 2],
+            [4, 2, 3],
+            [4, 2, 4],
+            [4, 3, 5],
+            [4, 3, 6],
+            [5, 3, 6],
+            [5, 3, 7],
+            [5, 3, 7],
+            [5, 3, 9],
+            [6, 4, 9],
+            [6, 4, 10],
+            [6, 4, 10],
+            [6, 4, 11],
+            [7, 4, 11],
+            [7, 4, 12],
+            [7, 4, 12],
+            [7, 4, 14],
+            [8, 4, 14],
+            [8, 4, 15],
+            [8, 4, 15]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=Druid}",
+            "{@filter 2nd|spells|level=2|class=Druid}",
+            "{@filter 3rd|spells|level=3|class=Druid}",
+            "{@filter 4th|spells|level=4|class=Druid}",
+            "{@filter 5th|spells|level=5|class=Druid}"
+          ],
+          "rowsSpellProgression": [
+            [2, 0, 0, 0, 0],
+            [2, 0, 0, 0, 0],
+            [3, 0, 0, 0, 0],
+            [3, 0, 0, 0, 0],
+            [4, 2, 0, 0, 0],
+            [4, 2, 0, 0, 0],
+            [4, 3, 0, 0, 0],
+            [4, 3, 0, 0, 0],
+            [4, 3, 2, 0, 0],
+            [4, 3, 2, 0, 0],
+            [4, 3, 3, 0, 0],
+            [4, 3, 3, 0, 0],
+            [4, 3, 3, 1, 0],
+            [4, 3, 3, 1, 0],
+            [4, 3, 3, 2, 0],
+            [4, 3, 3, 2, 0],
+            [4, 3, 3, 3, 1],
+            [4, 3, 3, 3, 1],
+            [4, 3, 3, 3, 2],
+            [4, 3, 3, 3, 2]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Speak with Animals|Shapeshifter|5BBPublic|1",
+        "Primal Order|Shapeshifter|5BBPublic|1",
+        "Spellcasting|Shapeshifter|5BBPublic|1",
+        "Wild Companion|Shapeshifter|5BBPublic|2",
+        "Wild Shape|Shapeshifter|5BBPublic|2",
+        "Circle of the Moon|Shapeshifter|5BBPublic|3",
+        "Ability Score Improvement|Shapeshifter|5BBPublic|4",
+        "Wild Resurgence|Shapeshifter|5BBPublic|5",
+        "Improved Circle Forms|Shapeshifter|5BBPublic|6",
+        "Elemental Fury|Shapeshifter|5BBPublic|7",
+        "Ability Score Improvement|Shapeshifter|5BBPublic|8",
+        "Moonlight Step|Shapeshifter|5BBPublic|10",
+        "Ability Score Improvement|Shapeshifter|5BBPublic|12",
+        "Lunar Form|Shapeshifter|5BBPublic|14",
+        "Improved Elemental Fury|Shapeshifter|5BBPublic|15",
+        "Ability Score Improvement|Shapeshifter|5BBPublic|16",
+        "Beast Spells|Shapeshifter|5BBPublic|18",
+        "Epic Boon|Shapeshifter|5BBPublic|19",
+        "Archdruid|Shapeshifter|5BBPublic|20"
+      ]
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Speak with Animals",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 1,
+      "entries": [
+        "You unlocked the magic of communicating with animals; you always have the {@spell Speak with Animals|XPHB} spell prepared."
+      ]
+    },
+    {
+      "name": "Primal Order",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 1,
+      "entries": [
+        "You have dedicated yourself to one of the following sacred roles of your choice.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "options",
+              "count": 1,
+              "entries": [
+                {
+                  "type": "refClassFeature",
+                  "classFeature": "Magician|Druid|XPHB|1"
+                },
+                {
+                  "type": "refClassFeature",
+                  "classFeature": "Warden|Druid|XPHB|1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Magician",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 1,
+      "entries": [
+        "You know one extra cantrip from the {@filter Druid spell list|spells|class=Druid}. In addition, your mystical connection to nature gives you a bonus to your Intelligence ({@skill Arcana|XPHB} or {@skill Nature|XPHB}) checks. The bonus equals your Wisdom modifier (minimum bonus of +1)."
+      ]
+    },
+    {
+      "name": "Warden",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 1,
+      "entries": [
+        "Trained for battle, you gain proficiency with {@filter Martial weapons|items|type=martial weapon} and training with {@filter Medium armor|items|type=Medium Armor}."
+      ]
+    },
+    {
+      "name": "Spellcasting",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 1,
+      "entries": [
+        "You have learned to cast spells through studying the mystical forces of nature. See {@book chapter 7|XPHB|7} for the rules on spellcasting. The information below details how you use those rules with Shapeshifter spells, which appear on the {@filter Druid spell list|spells|class=Druid} later in the class's description.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Cantrips",
+              "entries": [
+                "You know two cantrips of your choice from the {@filter Druid spell list|spells|class=Druid}. {@spell Druidcraft|XPHB} and {@spell Produce Flame|XPHB} are recommended.",
+                "Whenever you gain a Shapeshifter level, you can replace one of your cantrips with another cantrip of your choice from the {@filter Druid spell list|spells|class=Druid}.",
+                "When you reach Shapeshifter levels 4 and 10, you learn another cantrip of your choice from the {@filter Druid spell list|spells|class=Druid}, as shown in the Cantrips column of the Druid Features table."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Spell Slots",
+              "entries": [
+                "The Shapeshifter Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule Long Rest|XPHB}."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Prepared Spells of Level 1+",
+              "entries": [
+                "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 spells from the {@filter Druid spell list|spells|class=Druid}.",
+                "The number of spells on your list increases as you gain Shapeshifter levels, as shown in the Prepared Spells column of the Shapeshifter Features table. Whenever that number increases, choose additional spells from the {@filter Druid spell list|spells|class=Druid} until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Shapeshifter, your list of prepared spells can include six spells of levels 1 and 2 in any combination.",
+                "If another Shapeshifter feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Shapeshifter spells for you."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Changing Your Prepared Spells",
+              "entries": [
+                "Whenever you finish a {@variantrule Long Rest|XPHB}, you can change your list of prepared spells, replacing any of the spells with other Shapeshifter spells for which you have spell slots."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Spellcasting Ability",
+              "entries": ["Charisma is your spellcasting ability for your Shapeshifter spells."]
+            },
+            {
+              "type": "entries",
+              "name": "Spellcasting Focus",
+              "entries": [
+                "You can use a {@item Druidic Focus|XPHB} as a {@variantrule Spellcasting Focus|XPHB} for your Shapeshifter spells."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wild Companion",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 2,
+      "entries": [
+        "You can summon a nature spirit that assumes an animal form to aid you. As a {@action Magic|XPHB} action, you can expend a spell slot or a use of Wild Shape to cast the {@spell Find Familiar|XPHB} spell without Material components.",
+        "When you cast the spell in this way, the familiar is Fey and disappears when you finish a {@variantrule Long Rest|XPHB}."
+      ]
+    },
+    {
+      "name": "Wild Shape",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 2,
+      "entries": [
+        "The power of nature allows you to assume the form of an animal. As a {@variantrule Bonus Action|XPHB}, you shape-shift into a Beast form that you have learned for this feature (see \"Known Forms\" below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the {@condition Incapacitated|XPHB} condition, or die. You can also leave the form early as a {@variantrule Bonus Action|XPHB}.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Number of Uses",
+              "entries": [
+                "You can use Wild Shape twice. You regain one expended use when you finish a {@variantrule Short Rest|XPHB}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+                "You gain additional uses when you reach certain Druid levels, as shown in the Wild Shape column of the Druid Features table."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Known Forms",
+              "entries": [
+                "You know four Beast forms for this feature, chosen from among Beast stat blocks that have a maximum {@variantrule Challenge Rating|XPHB} of 1/4 and that lack a {@variantrule Fly Speed|XPHB} (see appendix B for stat block options). The {@creature Rat|XMM}, {@creature Riding Horse|XMM}, {@creature Spider|XMM}, and {@creature Wolf|XMM} are recommended. Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace one of your known forms with another eligible form.",
+                "When you reach certain Druid levels, your number of known forms and the maximum {@variantrule Challenge Rating|XPHB} for those forms increases, as shown in the Beast Shapes table. In addition, starting at level 8, you can adopt a form that has a {@variantrule Fly Speed|XPHB}.",
+                "When choosing known forms, you may look in the {@book Monster Manual|XMM} or elsewhere for eligible Beasts if the Dungeon Master permits you to do so."
+              ]
+            },
+            {
+              "type": "table",
+              "caption": "Beast Shapes",
+              "colLabels": ["Druid Level", "Known Forms", "Max CR", "Fly Speed"],
+              "colStyles": ["col-3 text-center", "col-3 text-center", "col-3 text-center"],
+              "rows": [
+                [
+                  "2",
+                  "4",
+                  "{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+                  "No"
+                ],
+                [
+                  "4",
+                  "6",
+                  "{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+                  "No"
+                ],
+                ["8", "8", "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}", "Yes"]
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Rules While Shape-Shifted",
+              "entries": [
+                "While in a form, you retain your personality, memories, and ability to speak, and the following rules apply:",
+                {
+                  "type": "list",
+                  "style": "list-hang-notitle",
+                  "items": [
+                    {
+                      "type": "item",
+                      "name": "Temporary Hit Points",
+                      "entries": [
+                        "When you assume a Wild Shape form, you gain a number of {@variantrule Temporary Hit Points|XPHB} equal to your Druid level."
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "name": "Game Statistics",
+                      "entries": [
+                        "Your game statistics are replaced by the Beast's stat block, but you retain your creature type; {@variantrule Hit Points|XPHB}; {@variantrule Hit Point Dice|XPHB}; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your {@variantrule Proficiency|XPHB|Proficiency Bonus} for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block."
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "name": "No Spellcasting",
+                      "entries": [
+                        "You can't cast spells, but shape-shifting doesn't break your {@status Concentration|XPHB} or otherwise interfere with a spell you've already cast."
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "name": "Objects",
+                      "entries": [
+                        "Your ability to handle objects is determined by the form's limbs rather than your own. In addition, you choose whether your equipment falls in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it's practical for the new form to wear a piece of equipment based on the creature's size and shape. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with the form. Equipment that merges with the form has no effect while you're in that form."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Circle of the Moon",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "{@i Adopt Animal Forms to Guard the Wilds}",
+        "Shapeshifters of the Circle of the Moon draw on lunar magic to transform themselves. Their order gathers under the moon to share news and perform rituals.",
+        "Changeable as the moon, a Shapeshifter of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Shapeshifter's blood.",
+        {
+          "type": "refClassFeature",
+          "classFeature": "Circle of the Moon Spells|Shapeshifter|5BBPublic|3"
+        }
+      ]
+    },
+    {
+      "name": "Circle of the Moon Spells",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "When you reach a Shapeshifter level specified in the Circle of the Moon Spells table, you thereafter always have the listed spells prepared.",
+        "In addition, you can cast the spells from this feature while you're in a Wild Shape form.",
+        {
+          "type": "table",
+          "caption": "Circle of the Moon Spells",
+          "colLabels": ["Shapeshifter Level", "Prepared Spells"],
+          "colStyles": ["col-1 text-center", "col-11"],
+          "rows": [
+            ["3", "{@spell Cure Wounds|XPHB}, {@spell Starry Wisp|XPHB}"],
+            ["5", "{@spell Moonbeam|XPHB}"],
+            ["9", "{@spell Conjure Animals|XPHB}"],
+            ["13", "{@spell Fount of Moonlight|XPHB}"],
+            ["17", "{@spell Mass Cure Wounds|XPHB}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 4,
+      "entries": [
+        "You gain the {@feat Ability Score Improvement|XPHB} feat or another {@5etools feat|feats.html} of your choice for which you qualify. You gain this feature again at Shapeshifter levels 8, 12, and 16."
+      ]
+    },
+    {
+      "name": "Wild Resurgence",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 5,
+      "entries": [
+        "If a feature requires you to spend a use of Wild Shape, you can choose to expend a spell slot instead."
+      ]
+    },
+    {
+      "name": "Improved Circle Forms",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 6,
+      "entries": [
+        "While in a Wild Shape form, you gain the following benefits.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Lunar Radiance",
+              "entries": [
+                "Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Increased Toughness",
+              "entries": ["You can add your Wisdom modifier to your Constitution saving throws."]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Fury",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 7,
+      "entries": [
+        "The might of the elements flows through you. You gain one of the following options of your choice.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "options",
+              "count": 1,
+              "entries": [
+                {
+                  "type": "refClassFeature",
+                  "classFeature": "Potent Spellcasting|Shapeshifter|5BBPublic|7"
+                },
+                {
+                  "type": "refClassFeature",
+                  "classFeature": "Primal Strike|Shapeshifter|5BBPublic|7"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Potent Spellcasting",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 7,
+      "header": 2,
+      "entries": ["Add your Charisma modifier to the damage you deal with any Shapeshifter cantrip."]
+    },
+    {
+      "name": "Primal Strike",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra {@damage 1d8} Cold, Fire, Lightning, or Thunder damage (choose when you hit)."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 8,
+      "entries": [
+        "You gain the {@feat Ability Score Improvement|XPHB} Feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+      ]
+    },
+    {
+      "name": "Moonlight Step",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 10,
+      "entries": [
+        "You magically transport yourself, reappearing amid a burst of moonlight. As a {@variantrule Bonus Action|XPHB}, you teleport up to 30 feet to an unoccupied space you can see, and you have {@variantrule Advantage|XPHB} on the next attack roll you make before the end of this turn.",
+        "You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}. You can also regain uses by expending a level 2+ spell slot for each use you want to restore (no action required)."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 12,
+      "entries": [
+        "You gain the {@feat Ability Score Improvement|XPHB} Feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+      ]
+    },
+    {
+      "name": "Lunar Form",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 14,
+      "entries": [
+        "The power of the moon suffuses you, granting you the following benefits.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Improved Lunar Radiance",
+              "entries": [
+                "Once per turn, you can deal an extra {@damage 2d10} Radiant damage to a target you hit with a Wild Shape form's attack."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Shared Moonlight",
+              "entries": [
+                "Whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Improved Elemental Fury",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 15,
+      "entries": [
+        "The option you chose for Elemental Fury grows more powerful, as detailed below.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Potent Spellcasting",
+              "entries": [
+                "When you cast a Druid cantrip with a range of 10 feet or greater, the spell's range increases by 300 feet."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Primal Strike",
+              "entries": ["The extra damage of your Primal Strike increases to {@damage 2d8}."]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 16,
+      "entries": [
+        "You gain the {@feat Ability Score Improvement|XPHB} Feat or another {@5etools feat|feats.html} of your choice for which you qualify."
+      ]
+    },
+    {
+      "name": "Beast Spells",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 18,
+      "entries": [
+        "While using Wild Shape, you can cast spells in Beast form, except for any spell that has a Material component with a cost specified or that consumes its Material component."
+      ]
+    },
+    {
+      "name": "Epic Boon",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 19,
+      "entries": [
+        "You gain an {@filter Epic Boon feat|feats|category=EB} or another {@5etools feat|feats.html} of your choice for which you qualify. {@feat Boon of Dimensional Travel|XPHB} is recommended."
+      ]
+    },
+    {
+      "name": "Archdruid",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 20,
+      "entries": [
+        "The vitality of nature constantly blooms within you, granting you the following benefits.",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Evergreen Wild Shape",
+              "entries": [
+                "Whenever you roll {@variantrule Initiative|XPHB} and have no uses of Wild Shape left, you regain one expended use of it."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Nature Magician",
+              "entries": [
+                "You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels. For example, if you convert two uses of Wild Shape, you produce a level 4 spell slot. Once you use this benefit, you can't do so again until you finish a {@variantrule Long Rest|XPHB}."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Longevity",
+              "entries": [
+                "The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year."
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
