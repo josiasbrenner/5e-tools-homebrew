@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1776682215,
+    "dateLastModified": 1776694427,
     "edition": "one",
     "status": "wip"
   },
@@ -590,10 +590,10 @@
                         {
                           "type": "list",
                           "items": [
-                            "The creature's size increases by one category, it Strength score and Constitution scores each increase by 2, and its Dexterity score decreases by 2.",
-                            "For calculating the creature's maximum Hit Points, you use the highest value on its Hit Point Dice and your level as the number of dice. They additionally gain 5 maximum Hit Points per CR (rounded down) of the creature's stat block. If the creature has a {@variantrule Fly Speed|XPHB}, its maximum Hit Points are halved (rounded down).",
-                            "You gain advantage on Strength checks and Strength saving throws. Damage you do to objects, structures and the environment is doubled.",
-                            "The creature's armor class increases by an amount equal to your Charisma modifier."
+                            "The animal's size increases by one category, it Strength score and Constitution scores each increase by 2, and its Dexterity score decreases by 2.",
+                            "For calculating the animal's maximum Hit Points, you use the highest value on its {@variantrule Hit Point Dice|XPHB} and your level as the number of dice. They additionally gain 5 maximum Hit Points per CR (rounded down) of the animal's stat block. If the animal has a {@variantrule Fly Speed|XPHB}, its maximum Hit Points are halved (rounded down).",
+                            "You gain {@variantrule Advantage|XPHB} on Strength checks and Strength saving throws. Damage you do to objects, structures and the environment is doubled.",
+                            "The animal's armor class increases by an amount equal to your Charisma modifier."
                           ]
                         }
                       ]
@@ -609,7 +609,7 @@
                       "type": "item",
                       "name": "Game Statistics",
                       "entries": [
-                        "Your game statistics are replaced by the animal's stat block, but you retain your creature type; {@variantrule Hit Point Dice|XPHB}; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your {@variantrule Proficiency|XPHB|Proficiency Bonus} for them and your attack modifier, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the animal's stat block is higher than yours, use the one in the stat block."
+                        "Your game statistics are replaced by the animal's stat block, but you retain your creature type; {@variantrule Hit Point Dice|XPHB}; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You use your {@variantrule Proficiency|XPHB|Proficiency Bonus} for attack rolls, saving throws and skill proficiencies. You also retain your own skill proficiencies in addition to gaining the proficiencies of the animal. If a skill modifier in the animal's stat block is higher than yours, use the one in the stat block."
                       ]
                     },
                     {
