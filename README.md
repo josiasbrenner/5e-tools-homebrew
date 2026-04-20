@@ -1,9 +1,3 @@
-Host file locally with CORS headers
-
-```bash
-uv run python cors_server.py
-```
-
 Add homebrew using
 
 - `https://raw.githubusercontent.com/josiasbrenner/5e-tools-homebrew/refs/heads/main/private/5bb-private.json`

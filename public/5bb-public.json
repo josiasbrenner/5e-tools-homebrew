@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1776622088,
+    "dateLastModified": 1776625838,
     "edition": "one",
     "status": "wip"
   },
@@ -414,7 +414,7 @@
         "Ability Score Improvement|Shapeshifter|5BBPublic|16",
         "Beast Spells|Shapeshifter|5BBPublic|18",
         "Epic Boon|Shapeshifter|5BBPublic|19",
-        "Archdruid|Shapeshifter|5BBPublic|20"
+        "Archshapeshifter|Shapeshifter|5BBPublic|20"
       ]
     }
   ],
@@ -446,11 +446,11 @@
               "entries": [
                 {
                   "type": "refClassFeature",
-                  "classFeature": "Magician|Druid|XPHB|1"
+                  "classFeature": "Magician|Shapeshifter|5BBPublic|1"
                 },
                 {
                   "type": "refClassFeature",
-                  "classFeature": "Warden|Druid|XPHB|1"
+                  "classFeature": "Warden|Shapeshifter|5BBPublic|1"
                 }
               ]
             }
@@ -465,7 +465,7 @@
       "classSource": "5BBPublic",
       "level": 1,
       "entries": [
-        "You know one extra cantrip from the {@filter Druid spell list|spells|class=Druid}. In addition, your mystical connection to nature gives you a bonus to your Intelligence ({@skill Arcana|XPHB} or {@skill Nature|XPHB}) checks. The bonus equals your Wisdom modifier (minimum bonus of +1)."
+        "You know one extra cantrip from the {@filter Druid spell list|spells|class=Druid}. In addition, your mystical connection to nature gives you a bonus to your Intelligence ({@skill Arcana|XPHB} or {@skill Nature|XPHB}) checks. The bonus equals your Charisma modifier (minimum bonus of +1)."
       ]
     },
     {
@@ -495,7 +495,7 @@
               "entries": [
                 "You know two cantrips of your choice from the {@filter Druid spell list|spells|class=Druid}. {@spell Druidcraft|XPHB} and {@spell Produce Flame|XPHB} are recommended.",
                 "Whenever you gain a Shapeshifter level, you can replace one of your cantrips with another cantrip of your choice from the {@filter Druid spell list|spells|class=Druid}.",
-                "When you reach Shapeshifter levels 4 and 10, you learn another cantrip of your choice from the {@filter Druid spell list|spells|class=Druid}, as shown in the Cantrips column of the Druid Features table."
+                "When you reach Shapeshifter levels 4 and 10, you learn another cantrip of your choice from the {@filter Druid spell list|spells|class=Druid}, as shown in the Cantrips column of the Shapeshifter Features table."
               ]
             },
             {
@@ -555,7 +555,7 @@
       "classSource": "5BBPublic",
       "level": 2,
       "entries": [
-        "The power of nature allows you to assume the form of an animal. As a {@variantrule Bonus Action|XPHB}, you shape-shift into a Beast form that you have learned for this feature (see \"Known Forms\" below). You stay in that form for a number of hours equal to half your Druid level or until you use Wild Shape again, have the {@condition Incapacitated|XPHB} condition, or die. You can also leave the form early as a {@variantrule Bonus Action|XPHB}.",
+        "The power of nature allows you to assume the form of an animal. As a {@variantrule Bonus Action|XPHB}, you shape-shift into a Beast form. You stay in that form for a number of hours equal to half your Shapeshifter level or until you use Wild Shape again, have the {@condition Incapacitated|XPHB} condition, or die. You can also leave the form early as a {@variantrule Bonus Action|XPHB}.",
         {
           "type": "entries",
           "entries": [
@@ -563,8 +563,8 @@
               "type": "entries",
               "name": "Number of Uses",
               "entries": [
-                "You can use Wild Shape twice. You regain one expended use when you finish a {@variantrule Short Rest|XPHB}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
-                "You gain additional uses when you reach certain Druid levels, as shown in the Wild Shape column of the Druid Features table."
+                "You can use Wild Shape four times. You regain two expended uses when you finish a {@variantrule Short Rest|XPHB}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
+                "You gain additional uses when you reach certain Shapeshifter levels, as shown in the Wild Shape column of the Shapeshifter Features table."
               ]
             },
             {
@@ -572,14 +572,14 @@
               "name": "Known Forms",
               "entries": [
                 "You know four Beast forms for this feature, chosen from among Beast stat blocks that have a maximum {@variantrule Challenge Rating|XPHB} of 1/4 and that lack a {@variantrule Fly Speed|XPHB} (see appendix B for stat block options). The {@creature Rat|XMM}, {@creature Riding Horse|XMM}, {@creature Spider|XMM}, and {@creature Wolf|XMM} are recommended. Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace one of your known forms with another eligible form.",
-                "When you reach certain Druid levels, your number of known forms and the maximum {@variantrule Challenge Rating|XPHB} for those forms increases, as shown in the Beast Shapes table. In addition, starting at level 8, you can adopt a form that has a {@variantrule Fly Speed|XPHB}.",
+                "When you reach certain Shapeshifter levels, your number of known forms and the maximum {@variantrule Challenge Rating|XPHB} for those forms increases, as shown in the Beast Shapes table. In addition, starting at level 8, you can adopt a form that has a {@variantrule Fly Speed|XPHB}.",
                 "When choosing known forms, you may look in the {@book Monster Manual|XMM} or elsewhere for eligible Beasts if the Dungeon Master permits you to do so."
               ]
             },
             {
               "type": "table",
               "caption": "Beast Shapes",
-              "colLabels": ["Druid Level", "Known Forms", "Max CR", "Fly Speed"],
+              "colLabels": ["Shapeshifter Level", "Known Forms", "Max CR", "Fly Speed"],
               "colStyles": ["col-3 text-center", "col-3 text-center", "col-3 text-center"],
               "rows": [
                 [
@@ -610,7 +610,7 @@
                       "type": "item",
                       "name": "Temporary Hit Points",
                       "entries": [
-                        "When you assume a Wild Shape form, you gain a number of {@variantrule Temporary Hit Points|XPHB} equal to your Druid level."
+                        "When you assume a Wild Shape form, you gain a number of {@variantrule Temporary Hit Points|XPHB} equal to your Shapeshifter level."
                       ]
                     },
                     {
@@ -723,7 +723,7 @@
             {
               "type": "entries",
               "name": "Increased Toughness",
-              "entries": ["You can add your Wisdom modifier to your Constitution saving throws."]
+              "entries": ["You can add your Charisma modifier to your Constitution saving throws."]
             }
           ]
         }
@@ -853,7 +853,7 @@
               "type": "entries",
               "name": "Potent Spellcasting",
               "entries": [
-                "When you cast a Druid cantrip with a range of 10 feet or greater, the spell's range increases by 300 feet."
+                "When you cast a Shapeshifter cantrip with a range of 10 feet or greater, the spell's range increases by 300 feet."
               ]
             },
             {
@@ -896,7 +896,7 @@
       ]
     },
     {
-      "name": "Archdruid",
+      "name": "Archshapeshifter",
       "source": "5BBPublic",
       "className": "Shapeshifter",
       "classSource": "5BBPublic",
@@ -965,7 +965,7 @@
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Assassin's Tools|Rogue|XPHB|Assassin|XPHB|3|XPHB"
+          "subclassFeature": "Silencari Tools|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
         },
         {
           "type": "refSubclassFeature",
@@ -974,6 +974,26 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Keen Weapon Training|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
+        }
+      ]
+    },
+    {
+      "name": "Silencari Tools",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "You gain a {@item Disguise Kit|XPHB} and a {@item Poisoner's Kit|XPHB}, and you have proficiency with them.",
+        {
+          "type": "entries",
+          "name": "Bloody Disguise",
+          "entries": [
+            "You also gain 4 empty Viles of Bloody Disguise. You can use your Disguise Kit to extract the appearance and voice from a creature's blood into a Vile of Bloody Disguise. This process takes 10 minutes and is only possible within 12 hours after the creature's death.",
+            "As a {@action Magic|XPHB} action, you can then use a this full Vile of Bloody Disguise to shape-shift and change your appearance and your voice to match the creature's. This doesn't change your game statistics and only works as long as the creature has the same basic arrangement of limbs that you have and is of a size between Medium and Small. This shape-shift doesn't change your clothing and equipment."
+          ]
         }
       ]
     },

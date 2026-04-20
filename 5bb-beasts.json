@@ -1,0 +1,7229 @@
+{
+  "monster": [
+    {
+      "name": "Allosaurus (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 52,
+        "formula": "3d10 + 12 + 10"
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 21,
+      "dex": 11,
+      "con": 19,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "skill": {
+        "perception": "+5.0"
+      },
+      "passive": 15,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 5 ft. {@h 16} ({@damage 2d10 + 5}) Piercing damage."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 5 ft. {@h 9} ({@damage 1d8 + 5}) Slashing damage. If the target is a Large or smaller creature and the allosaurus moved 30+ feet straight toward it immediately before the hit, the target has the {@condition Prone|XPHB} condition, and the allosaurus can make one Bite attack against it."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/allosaurus.opus"
+      },
+      "group": [
+        "Dinosaurs"
+      ]
+    },
+    {
+      "name": "Ankylosaurus (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        18
+      ],
+      "hp": {
+        "average": 60,
+        "formula": "3d12 + 9 + 15"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 21,
+      "dex": 9,
+      "con": 17,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "save": {
+        "str": "+7.0"
+      },
+      "passive": 11,
+      "cr": "3",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The ankylosaurus makes two Tail attacks."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 10 ft. {@h 10} ({@damage 1d10 + 5}) Bludgeoning damage. If the target is a Huge or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/ankylosaurus.opus"
+      },
+      "group": [
+        "Dinosaurs"
+      ]
+    },
+    {
+      "name": "Ape (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 35,
+        "formula": "3d8 + 9 + 2"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 18,
+      "dex": 12,
+      "con": 16,
+      "int": 6,
+      "wis": 12,
+      "cha": 7,
+      "skill": {
+        "athletics": "+6.0",
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The ape makes two Fist attacks."
+          ]
+        },
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 6} ({@damage 1d4 + 4}) Bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Rock {@recharge}",
+          "entries": [
+            "{@atkr r} {@hit 6}, range 25/50 ft. {@h 11} ({@damage 2d6 + 4}) Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA",
+        "RA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/ape.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 346
+        }
+      ]
+    },
+    {
+      "name": "Archelon (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        20
+      ],
+      "hp": {
+        "average": 62,
+        "formula": "3d12 + 6 + 20"
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 80
+      },
+      "str": 20,
+      "dex": 14,
+      "con": 15,
+      "int": 4,
+      "wis": 14,
+      "cha": 6,
+      "skill": {
+        "stealth": "+4.0"
+      },
+      "passive": 12,
+      "cr": "4",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The archelon makes two Bite attacks."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 5 ft. {@h 15} ({@damage 3d6 + 5}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The archelon can breathe air and water."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Amphibious"
+      ],
+      "group": [
+        "Dinosaurs"
+      ]
+    },
+    {
+      "name": "Baboon (5BB)",
+      "source": "5BB",
+      "size": [
+        "M"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 21,
+        "formula": "3d6 + 3 + 0"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 10,
+      "dex": 12,
+      "con": 13,
+      "int": 4,
+      "wis": 12,
+      "cha": 6,
+      "passive": 11,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 2}, reach 5 ft. {@h 2} ({@damage 1d4 - 0}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The baboon has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the baboon's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/baboon.opus"
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Badger (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 24,
+        "formula": "3d4 + 12 + 0"
+      },
+      "speed": {
+        "walk": 20,
+        "burrow": 5
+      },
+      "str": 12,
+      "dex": 9,
+      "con": 18,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 2} Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/badger.opus"
+      },
+      "resist": [
+        "poison"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 346
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Bat (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 6,
+        "formula": "(3d4 - 0 + 0) / 2"
+      },
+      "speed": {
+        "walk": 5,
+        "fly": 30
+      },
+      "str": 4,
+      "dex": 13,
+      "con": 10,
+      "int": 2,
+      "wis": 12,
+      "cha": 4,
+      "passive": 11,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 3} to hit, reach 5 ft. {@h 0} Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "mountain",
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 60 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/bat.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 346
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Black Bear (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 35,
+        "formula": "3d8 + 9 + 2"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30,
+        "swim": 30
+      },
+      "str": 17,
+      "dex": 10,
+      "con": 16,
+      "int": 2,
+      "wis": 12,
+      "cha": 7,
+      "skill": {
+        "perception": "+5.0"
+      },
+      "passive": 15,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The bear makes two Rend attacks."
+          ]
+        },
+        {
+          "name": "Rend",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 6} ({@damage 1d6 + 3}) Slashing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/black-bear.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 346
+        }
+      ]
+    },
+    {
+      "name": "Blood Hawk (5BB)",
+      "source": "5BB",
+      "size": [
+        "M"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 10,
+        "formula": "(3d6 + 3 + 0) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 60
+      },
+      "str": 8,
+      "dex": 12,
+      "con": 12,
+      "int": 3,
+      "wis": 14,
+      "cha": 5,
+      "skill": {
+        "perception": "+6.0"
+      },
+      "passive": 16,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Beak",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 3} ({@damage 1d4 + 1}) Piercing damage, or 6 ({@damage 1d8 + 1}) Piercing damage if the target is {@status Bloodied|XPHB}."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic",
+        "coastal",
+        "forest",
+        "grassland",
+        "hill",
+        "mountain"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The hawk has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the hawk's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/blood-hawk.opus"
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ]
+    },
+    {
+      "name": "Boar (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 34,
+        "formula": "3d8 + 9 + 1"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 15,
+      "dex": 9,
+      "con": 16,
+      "int": 2,
+      "wis": 9,
+      "cha": 5,
+      "passive": 9,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 5} ({@damage 1d6 + 2}) Piercing damage. If the target is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 ({@damage 1d6 + 1}) Piercing damage and has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Bloodied Fury",
+          "entries": [
+            "While {@status Bloodied|XPHB}, the boar has {@variantrule Advantage|XPHB} on attack rolls."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/boar.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 347
+        }
+      ]
+    },
+    {
+      "name": "Brown Bear (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 44,
+        "formula": "3d10 + 9 + 5"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 30
+      },
+      "str": 19,
+      "dex": 10,
+      "con": 17,
+      "int": 2,
+      "wis": 13,
+      "cha": 7,
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The bear makes one Bite attack and one Claw attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 8} ({@damage 1d8 + 4}) Piercing damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 6} ({@damage 1d4 + 4}) Slashing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic",
+        "forest",
+        "hill"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/brown-bear.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 347
+        }
+      ]
+    },
+    {
+      "name": "Camel (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 42,
+        "formula": "3d10 + 12 + 0"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 17,
+      "dex": 6,
+      "con": 19,
+      "int": 2,
+      "wis": 11,
+      "cha": 5,
+      "save": {
+        "con": "+6.0"
+      },
+      "passive": 10,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 5} ({@damage 1d4 + 3}) Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/camel.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 347
+        }
+      ]
+    },
+    {
+      "name": "Cat (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 15,
+        "formula": "3d4 + 3 + 0"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "str": 5,
+      "dex": 13,
+      "con": 12,
+      "int": 3,
+      "wis": 12,
+      "cha": 7,
+      "save": {
+        "dex": "+3.0"
+      },
+      "skill": {
+        "perception": "+3.0",
+        "stealth": "+3.0"
+      },
+      "passive": 13,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Scratch",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 0} Slashing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "forest",
+        "grassland",
+        "urban"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Jumper",
+          "entries": [
+            "The cat's jump distance is determined using its Dexterity rather than its Strength."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/cat.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 347
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Constrictor Snake (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 37,
+        "formula": "3d10 + 6 + 1"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 17,
+      "dex": 12,
+      "con": 14,
+      "int": 1,
+      "wis": 10,
+      "cha": 3,
+      "skill": {
+        "perception": "+2.0",
+        "stealth": "+3.0"
+      },
+      "passive": 12,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 7} ({@damage 1d8 + 3}) Piercing damage."
+          ]
+        },
+        {
+          "name": "Constrict",
+          "entries": [
+            "{@actSave str} {@dc 12}, one Medium or smaller creature the snake can see within 5 feet. {@actSaveFail} 7 ({@damage 3d4}) Bludgeoning damage, and the target has the {@condition Grappled|XPHB} condition (escape {@dc 12})."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "forest",
+        "swamp",
+        "underwater"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 10 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "savingThrowForced": [
+        "strength"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/constrictor-snake.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 348
+        }
+      ]
+    },
+    {
+      "name": "Crab (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 18,
+        "formula": "3d4 + 6 + 0"
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 20
+      },
+      "str": 8,
+      "dex": 9,
+      "con": 14,
+      "int": 1,
+      "wis": 8,
+      "cha": 2,
+      "skill": {
+        "stealth": "+1.0"
+      },
+      "passive": 9,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atkr m} {@hit 1}, reach 5 ft. {@h 0} Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "underwater"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 30 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The crab can breathe air and water."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/crab.opus"
+      },
+      "traitTags": [
+        "Amphibious"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 348
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Crocodile (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 38,
+        "formula": "3d10 + 6 + 2"
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 30
+      },
+      "str": 17,
+      "dex": 8,
+      "con": 15,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "save": {
+        "con": "+4.0"
+      },
+      "skill": {
+        "stealth": "+1.0"
+      },
+      "passive": 10,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 7} ({@damage 1d8 + 3}) Piercing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 12}). While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "swamp",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "grappled",
+        "restrained"
+      ],
+      "trait": [
+        {
+          "name": "Hold Breath",
+          "entries": [
+            "The crocodile can hold its breath for 1 hour."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/crocodile.opus"
+      },
+      "traitTags": [
+        "Hold Breath"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 348
+        }
+      ]
+    },
+    {
+      "name": "Deer (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 27,
+        "formula": "3d8 + 3 + 0"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 13,
+      "dex": 14,
+      "con": 13,
+      "int": 2,
+      "wis": 14,
+      "cha": 5,
+      "skill": {
+        "perception": "+4.0"
+      },
+      "passive": 14,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Ram",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 3} ({@damage 1d4 + 1}) Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Agile",
+          "entries": [
+            "The deer doesn't provoke an Opportunity Attack when it moves out of an enemy's reach."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/deer.opus"
+      },
+      "familiar": true
+    },
+    {
+      "name": "Dire Wolf (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 44,
+        "formula": "3d10 + 9 + 5"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 19,
+      "dex": 13,
+      "con": 17,
+      "int": 3,
+      "wis": 12,
+      "cha": 7,
+      "skill": {
+        "perception": "+5.0",
+        "stealth": "+3.0"
+      },
+      "passive": 15,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 9} ({@damage 1d10 + 4}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The wolf has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/dire-wolf.opus"
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 348
+        }
+      ]
+    },
+    {
+      "name": "Draft Horse (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 40,
+        "formula": "3d10 + 9 + 1"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 20,
+      "dex": 8,
+      "con": 17,
+      "int": 2,
+      "wis": 11,
+      "cha": 7,
+      "passive": 10,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Hooves",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 5 ft. {@h 7} ({@damage 1d4 + 5}) Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "urban"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/draft-horse.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 349
+        }
+      ]
+    },
+    {
+      "name": "Eagle (5BB)",
+      "source": "5BB",
+      "size": [
+        "M"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 12,
+        "formula": "(3d6 + 6 + 0) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 60
+      },
+      "str": 8,
+      "dex": 13,
+      "con": 14,
+      "int": 2,
+      "wis": 14,
+      "cha": 7,
+      "skill": {
+        "perception": "+6.0"
+      },
+      "passive": 16,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Talons",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 feet. {@h 3} ({@damage 1d4 + 1}) Slashing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "grassland",
+        "hill",
+        "mountain"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/eagle.opus"
+      },
+      "familiar": true
+    },
+    {
+      "name": "Elephant (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 68,
+        "formula": "3d12 + 12 + 20"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 24,
+      "dex": 7,
+      "con": 19,
+      "int": 3,
+      "wis": 11,
+      "cha": 6,
+      "passive": 10,
+      "cr": "4",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The elephant makes two Gore attacks."
+          ]
+        },
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atkr m} {@hit 9}, reach 5 ft. {@h 16} ({@damage 2d8 + 7}) Piercing damage. If the target is a Huge or smaller creature and the elephant moved 20+ feet straight toward it immediately before the hit, the target has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "prone"
+      ],
+      "savingThrowForced": [
+        "dexterity"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/elephant.opus"
+      },
+      "bonus": [
+        {
+          "name": "Trample",
+          "entries": [
+            "{@actSave dex} {@dc 16}, one creature within 5 feet that has the {@condition Prone|XPHB} condition. {@actSaveFail} 17 ({@damage 2d10 + 6}) Bludgeoning damage. {@actSaveSuccess} Half damage."
+          ]
+        }
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 349
+        }
+      ]
+    },
+    {
+      "name": "Elk (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 34,
+        "formula": "3d10 + 3 + 1"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 18,
+      "dex": 8,
+      "con": 13,
+      "int": 2,
+      "wis": 10,
+      "cha": 6,
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 12,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Ram",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 7} ({@damage 1d6 + 4}) Bludgeoning damage. If the target is a Large or smaller creature and the elk moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 ({@damage 1d6 + 1}) Bludgeoning damage and has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/elk.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 349
+        }
+      ]
+    },
+    {
+      "name": "Frog (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 12,
+        "formula": "3d4 - 0 + 0"
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 20
+      },
+      "str": 3,
+      "dex": 11,
+      "con": 10,
+      "int": 1,
+      "wis": 8,
+      "cha": 3,
+      "skill": {
+        "perception": "+1.0",
+        "stealth": "+2.0"
+      },
+      "passive": 11,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 2}, reach 5 ft. {@h 0} Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "swamp"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The frog can breathe air and water."
+          ]
+        },
+        {
+          "name": "Standing Leap",
+          "entries": [
+            "The frog's {@variantrule Long Jump|XPHB} is up to 10 feet and its {@variantrule High Jump|XPHB} is up to 5 feet with or without a running start."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/frog.opus"
+      },
+      "traitTags": [
+        "Amphibious"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 349
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Giant Ape (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 86,
+        "formula": "3d12 + 15 + 35"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "str": 25,
+      "dex": 12,
+      "con": 20,
+      "int": 5,
+      "wis": 12,
+      "cha": 7,
+      "skill": {
+        "athletics": "+9.0",
+        "perception": "+3.0",
+        "survival": "+3.0"
+      },
+      "passive": 14,
+      "cr": "7",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The ape makes two Fist attacks."
+          ]
+        },
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atkr m} {@hit 9}, reach 10 ft. {@h 23} ({@damage 3d10 + 7}) Bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Boulder Toss {@recharge}",
+          "entries": [
+            "The ape hurls a boulder at a point it can see within 90 feet. {@actSave dex} {@dc 17}, each creature in a 5-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point. {@actSaveFail} 24 ({@damage 7d6}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only."
+          ]
+        }
+      ],
+      "environment": [
+        "forest"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "AOE",
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "initiative": {
+        "proficiency": 1
+      },
+      "conditionInflict": [
+        "prone"
+      ],
+      "savingThrowForced": [
+        "dexterity"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-ape.opus"
+      },
+      "bonus": [
+        {
+          "name": "Leap",
+          "entries": [
+            "The ape jumps up to 30 feet by spending 10 feet of movement."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giant Badger (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 37,
+        "formula": "3d8 + 12 + 1"
+      },
+      "speed": {
+        "walk": 30,
+        "burrow": 10
+      },
+      "str": 15,
+      "dex": 8,
+      "con": 19,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 7} ({@damage 2d4 + 2}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-badger.opus"
+      },
+      "resist": [
+        "poison"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 350
+        }
+      ]
+    },
+    {
+      "name": "Giant Bat (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 17,
+        "formula": "(3d10 + 3 + 1) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 60
+      },
+      "str": 17,
+      "dex": 14,
+      "con": 13,
+      "int": 2,
+      "wis": 12,
+      "cha": 6,
+      "passive": 11,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 5} ({@damage 1d6 + 2}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "mountain",
+        "underdark"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-bat.opus"
+      }
+    },
+    {
+      "name": "Giant Boar (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 52,
+        "formula": "3d10 + 12 + 10"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 19,
+      "dex": 8,
+      "con": 18,
+      "int": 2,
+      "wis": 7,
+      "cha": 5,
+      "save": {
+        "str": "+6.0"
+      },
+      "passive": 8,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 11} ({@damage 2d6 + 4}) Piercing damage. If the target is a Large or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 ({@damage 2d6 + 1}) Piercing damage and has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Bloodied Fury",
+          "entries": [
+            "The boar has {@variantrule Advantage|XPHB} on melee attack rolls while it is {@status Bloodied|XPHB}."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-boar.opus"
+      }
+    },
+    {
+      "name": "Giant Centipede (5BB)",
+      "source": "5BB",
+      "size": [
+        "M"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 25,
+        "formula": "3d6 + 6 + 1"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 7,
+      "dex": 12,
+      "con": 14,
+      "int": 1,
+      "wis": 7,
+      "cha": 3,
+      "passive": 8,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 3} ({@damage 1d4 + 1}) Piercing damage, and the target has the {@condition Poisoned|XPHB} condition until the start of the centipede's next turn."
+          ]
+        }
+      ],
+      "environment": [
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 30 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "conditionInflict": [
+        "poisoned"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-centipede.opus"
+      }
+    },
+    {
+      "name": "Giant Constrictor Snake (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 52,
+        "formula": "3d12 + 6 + 10"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 21,
+      "dex": 12,
+      "con": 14,
+      "int": 1,
+      "wis": 10,
+      "cha": 3,
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 12,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The snake makes one Bite attack and uses Constrict."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 10 ft. {@h 12} ({@damage 2d6 + 5}) Piercing damage."
+          ]
+        },
+        {
+          "name": "Constrict",
+          "entries": [
+            "{@actSave str} {@dc 14}, one Large or smaller creature the snake can see within 10 feet. {@actSaveFail} 13 ({@damage 2d8 + 4}) Bludgeoning damage, and the target has the {@condition Grappled|XPHB} condition (escape {@dc 14})."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "forest",
+        "swamp",
+        "underwater"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 10 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "savingThrowForced": [
+        "strength"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-constrictor-snake.opus"
+      }
+    },
+    {
+      "name": "Giant Crab (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        18
+      ],
+      "hp": {
+        "average": 27,
+        "formula": "3d8 + 3 + 0"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 15,
+      "dex": 11,
+      "con": 13,
+      "int": 1,
+      "wis": 9,
+      "cha": 3,
+      "skill": {
+        "stealth": "+2.0"
+      },
+      "passive": 9,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 5} ({@damage 1d6 + 2}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 11}) from one of two claws."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "underwater"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 30 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The crab can breathe air and water."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-crab.opus"
+      },
+      "traitTags": [
+        "Amphibious"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 350
+        }
+      ]
+    },
+    {
+      "name": "Giant Crocodile (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 73,
+        "formula": "3d12 + 12 + 25"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 50
+      },
+      "str": 23,
+      "dex": 7,
+      "con": 19,
+      "int": 2,
+      "wis": 10,
+      "cha": 7,
+      "skill": {
+        "stealth": "+2.0"
+      },
+      "passive": 10,
+      "cr": "5",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The crocodile makes one Bite attack and one Tail attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 8}, reach 5 ft. {@h 22} ({@damage 3d10 + 6}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 15}). While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition and can't be targeted by the crocodile's Tail."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atkr m} {@hit 8}, reach 10 ft. {@h 19} ({@damage 3d8 + 6}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "swamp"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "trait": [
+        {
+          "name": "Hold Breath",
+          "entries": [
+            "The crocodile can hold its breath for 1 hour."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-crocodile.opus"
+      },
+      "traitTags": [
+        "Hold Breath"
+      ]
+    },
+    {
+      "name": "Giant Fire Beetle (5BB)",
+      "source": "5BB",
+      "size": [
+        "M"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 24,
+        "formula": "3d6 + 6 + 0"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 10,
+      "dex": 8,
+      "con": 14,
+      "int": 1,
+      "wis": 7,
+      "cha": 3,
+      "passive": 8,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 2}, reach 5 ft. {@h 2} Fire damage."
+          ]
+        }
+      ],
+      "environment": [
+        "underdark"
+      ],
+      "damageTags": [
+        "F"
+      ],
+      "miscTags": [
+        "AOE",
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 30 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Illumination",
+          "entries": [
+            "The beetle sheds {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-fire-beetle.opus"
+      },
+      "traitTags": [
+        "Illumination"
+      ],
+      "resist": [
+        "fire"
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Giant Frog (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 28,
+        "formula": "3d8 + 3 + 1"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 14,
+      "dex": 11,
+      "con": 13,
+      "int": 2,
+      "wis": 10,
+      "cha": 3,
+      "skill": {
+        "perception": "+2.0",
+        "stealth": "+3.0"
+      },
+      "passive": 12,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 6} ({@damage 1d6 + 3}) Piercing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 11})."
+          ]
+        },
+        {
+          "name": "Swallow",
+          "entries": [
+            "The frog swallows a Small or smaller target it is grappling. While swallowed, the target isn't {@condition Grappled|XPHB} but has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, and it has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the frog. While swallowing the target, the frog can't use Bite, and if the frog dies, the swallowed target is no longer {@condition Restrained|XPHB} and can escape from the corpse using 5 feet of movement, exiting with the {@condition Prone|XPHB} condition.",
+            "At the end of the frog's next turn, the swallowed target takes 5 ({@damage 2d4}) Acid damage. If that damage doesn't kill it, the frog disgorges it, causing it to exit {@condition Prone|XPHB}."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "swamp"
+      ],
+      "actionTags": [
+        "Swallow"
+      ],
+      "damageTags": [
+        "A",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The frog can breathe air and water."
+          ]
+        },
+        {
+          "name": "Standing Leap",
+          "entries": [
+            "The frog's {@variantrule Long Jump|XPHB} is up to 20 feet and its {@variantrule High Jump|XPHB} is up to 10 feet with or without a running start."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-frog.opus"
+      },
+      "traitTags": [
+        "Amphibious"
+      ]
+    },
+    {
+      "name": "Giant Goat (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 38,
+        "formula": "3d10 + 6 + 2"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 30
+      },
+      "str": 19,
+      "dex": 11,
+      "con": 14,
+      "int": 3,
+      "wis": 12,
+      "cha": 6,
+      "save": {
+        "str": "+6.0"
+      },
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Ram",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 7} ({@damage 1d6 + 4}) Bludgeoning damage. If the target is a Large or smaller creature and the goat moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 ({@damage 2d4 + 1}) Bludgeoning damage and has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland",
+        "hill",
+        "mountain"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-goat.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 350
+        }
+      ]
+    },
+    {
+      "name": "Giant Hyena (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 44,
+        "formula": "3d10 + 9 + 5"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 18,
+      "dex": 12,
+      "con": 16,
+      "int": 2,
+      "wis": 12,
+      "cha": 7,
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 11} ({@damage 2d6 + 4}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-hyena.opus"
+      },
+      "bonus": [
+        {
+          "name": "Rampage (1/Day)",
+          "entries": [
+            "Immediately after dealing damage to a creature that was already {@status Bloodied|XPHB}, the hyena can move up to half its {@variantrule Speed|XPHB}, and it makes one Bite attack."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giant Lizard (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 37,
+        "formula": "3d10 + 6 + 1"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "str": 17,
+      "dex": 10,
+      "con": 15,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "save": {
+        "dex": "+2.0"
+      },
+      "passive": 10,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 7} ({@damage 1d8 + 3}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "desert",
+        "forest",
+        "swamp",
+        "underdark"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-lizard.opus"
+      },
+      "traitTags": [
+        "Spider Climb"
+      ]
+    },
+    {
+      "name": "Giant Octopus (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 41,
+        "formula": "3d10 + 6 + 5"
+      },
+      "speed": {
+        "walk": 10,
+        "swim": 60
+      },
+      "str": 19,
+      "dex": 11,
+      "con": 15,
+      "int": 5,
+      "wis": 10,
+      "cha": 4,
+      "skill": {
+        "perception": "+4.0",
+        "stealth": "+4.0"
+      },
+      "passive": 14,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Tentacles",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 10 ft. {@h 11} ({@damage 2d6 + 4}) Bludgeoning damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from all eight tentacles. While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "actionTags": [
+        "Tentacles"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained"
+      ],
+      "trait": [
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The octopus can breathe only underwater. It can hold its breath for 1 hour outside water."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-octopus.opus"
+      },
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "reaction": [
+        {
+          "name": "Ink Cloud (1/Day)",
+          "entries": [
+            "{@actTrigger} The octopus takes damage while underwater. {@actResponse} The octopus releases ink that fills a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} centered on itself, and the octopus moves up to its {@variantrule Swim Speed|XPHB}. The {@variantrule Cube [Area of Effect]|XPHB|Cube} is {@variantrule Heavily Obscured|XPHB} for 1 minute or until a strong current or similar effect disperses the ink."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giant Rat (5BB)",
+      "source": "5BB",
+      "size": [
+        "M"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 21,
+        "formula": "3d6 + 3 + 0"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 9,
+      "dex": 14,
+      "con": 13,
+      "int": 2,
+      "wis": 10,
+      "cha": 4,
+      "save": {
+        "dex": "+4.0"
+      },
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 12,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 feet. {@h 4} ({@damage 1d4 + 2}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "swamp",
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The rat has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-rat.opus"
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ]
+    },
+    {
+      "name": "Giant Scorpion (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        18
+      ],
+      "hp": {
+        "average": 54,
+        "formula": "3d10 + 9 + 15"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 18,
+      "dex": 11,
+      "con": 17,
+      "int": 1,
+      "wis": 9,
+      "cha": 3,
+      "passive": 9,
+      "cr": "3",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The scorpion makes two Claw attacks and one Sting attack."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 7} ({@damage 1d6 + 4}) Bludgeoning damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws."
+          ]
+        },
+        {
+          "name": "Sting",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 8} ({@damage 1d8 + 4}) Piercing damage plus 11 ({@damage 2d10 + 1}) Poison damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 60 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-scorpion.opus"
+      }
+    },
+    {
+      "name": "Giant Seahorse (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 35,
+        "formula": "3d10 + 3 + 2"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 40
+      },
+      "str": 17,
+      "dex": 10,
+      "con": 13,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "passive": 11,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Ram",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 10} ({@damage 2d6 + 3}) Bludgeoning damage, or 11 ({@damage 2d8 + 3}) Bludgeoning damage if the seahorse moved 20+ feet straight toward the target immediately before the hit."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The seahorse can breathe only underwater."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "bonus": [
+        {
+          "name": "Bubble Dash",
+          "entries": [
+            "While underwater, the seahorse moves up to half its {@variantrule Swim Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+          ]
+        }
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 350
+        }
+      ]
+    },
+    {
+      "name": "Giant Shark (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 79,
+        "formula": "3d12 + 18 + 25"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 60
+      },
+      "str": 25,
+      "dex": 9,
+      "con": 23,
+      "int": 1,
+      "wis": 10,
+      "cha": 5,
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 13,
+      "cr": "5",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The shark makes two Bite attacks."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 9} (with {@variantrule Advantage|XPHB} if the target doesn't have all its {@variantrule Hit Points|XPHB}), reach 5 ft. {@h 23} ({@damage 3d10 + 7}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "initiative": {
+        "proficiency": 1
+      },
+      "senses": [
+        "Blindsight 60 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The shark can breathe only underwater."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-shark.opus"
+      },
+      "traitTags": [
+        "Water Breathing"
+      ]
+    },
+    {
+      "name": "Giant Spider (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 41,
+        "formula": "3d10 + 6 + 5"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 16,
+      "dex": 14,
+      "con": 14,
+      "int": 2,
+      "wis": 11,
+      "cha": 4,
+      "skill": {
+        "perception": "+4.0",
+        "stealth": "+6.0"
+      },
+      "passive": 14,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 6} ({@damage 1d8 + 2}) Piercing damage plus 7 ({@damage 2d6 - -1}) Poison damage."
+          ]
+        },
+        {
+          "name": "Web {@recharge 5}",
+          "entries": [
+            "{@actSave dex} {@dc 13}, one creature the spider can see within 60 feet. {@actSaveFail} The target has the {@condition Restrained|XPHB} condition until the web is destroyed (AC 10; HP 5; {@variantrule Vulnerability|XPHB} to Fire damage; {@variantrule Immunity|XPHB} to Poison and Psychic damage)."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "forest",
+        "swamp",
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "restrained"
+      ],
+      "savingThrowForced": [
+        "dexterity"
+      ],
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          ]
+        },
+        {
+          "name": "Web Walker",
+          "entries": [
+            "The spider ignores movement restrictions caused by webs, and it knows the location of any other creature in contact with the same web."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-spider.opus"
+      },
+      "traitTags": [
+        "Spider Climb",
+        "Web Walker"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 351
+        }
+      ]
+    },
+    {
+      "name": "Giant Squid (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 72,
+        "formula": "3d12 + 6 + 30"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 80
+      },
+      "str": 25,
+      "dex": 12,
+      "con": 14,
+      "int": 5,
+      "wis": 11,
+      "cha": 4,
+      "save": {
+        "str": "+9.0",
+        "dex": "+3.0"
+      },
+      "skill": {
+        "perception": "+4.0"
+      },
+      "passive": 16,
+      "cr": "6",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The squid makes one Bite attack and one Tentacle attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 9}, reach 5 ft. {@h 29} ({@damage 4d10 + 7}) Piercing damage."
+          ]
+        },
+        {
+          "name": "Tentacle",
+          "entries": [
+            "{@atkr m} {@hit 9}, reach 15 ft. {@h 20} ({@damage 3d8 + 7}) Bludgeoning damage. If the target is a Huge or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 16}) from one of two tentacles, and the squid can pull the target up to 10 feet straight toward itself."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Tentacles"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "trait": [
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The squid can breathe only underwater."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "reaction": [
+        {
+          "name": "Ink Cloud (1/Day)",
+          "entries": [
+            "{@actTrigger} The squid takes damage while underwater. {@actResponse} The squid releases ink that fills a 15-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} centered on itself, and the squid moves up to its {@variantrule Swim Speed|XPHB}. The {@variantrule Cube [Area of Effect]|XPHB|Cube} is {@variantrule Heavily Obscured|XPHB} for 1 minute or until a strong current or similar effect disperses the ink."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giant Toad (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 41,
+        "formula": "3d10 + 6 + 5"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 17,
+      "dex": 11,
+      "con": 15,
+      "int": 2,
+      "wis": 10,
+      "cha": 3,
+      "passive": 10,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 6} ({@damage 1d6 + 3}) Piercing damage plus 5 ({@damage 2d4 + 1}) Poison damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 12})."
+          ]
+        },
+        {
+          "name": "Swallow",
+          "entries": [
+            "The toad swallows a Medium or smaller target it is grappling. While swallowed, the target isn't {@condition Grappled|XPHB} but has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, and it has {@variantrule Cover|XPHB|Total Cover} against attacks and other effects outside the toad. In addition, the target takes 10 ({@damage 3d6}) Acid damage at the end of each of the toad's turns. The toad can have only one target swallowed at a time, and it can't use Bite while it has a swallowed target. If the toad dies, a swallowed creature is no longer {@condition Restrained|XPHB} and can escape from the corpse using 5 feet of movement, exiting with the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "forest",
+        "swamp",
+        "underdark"
+      ],
+      "actionTags": [
+        "Swallow"
+      ],
+      "damageTags": [
+        "A",
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "grappled"
+      ],
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The toad can breathe air and water."
+          ]
+        },
+        {
+          "name": "Standing Leap",
+          "entries": [
+            "The toad's {@variantrule Long Jump|XPHB} is up to 20 feet and its {@variantrule High Jump|XPHB} is up to 10 feet with or without a running start."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-toad.opus"
+      },
+      "traitTags": [
+        "Amphibious"
+      ]
+    },
+    {
+      "name": "Giant Venomous Snake (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 31,
+        "formula": "3d8 + 6 + 1"
+      },
+      "speed": {
+        "walk": 40,
+        "swim": 40
+      },
+      "str": 12,
+      "dex": 16,
+      "con": 15,
+      "int": 2,
+      "wis": 10,
+      "cha": 3,
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 12,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 10 ft. {@h 5} ({@damage 1d4 + 3}) Piercing damage plus 4 ({@damage 1d8 - -1}) Poison damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "desert",
+        "forest",
+        "grassland",
+        "hill",
+        "swamp"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 10 ft."
+      ],
+      "senseTags": [
+        "B"
+      ]
+    },
+    {
+      "name": "Giant Wasp (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 14,
+        "formula": "(3d8 + 3 + 2) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 50
+      },
+      "str": 12,
+      "dex": 12,
+      "con": 12,
+      "int": 1,
+      "wis": 10,
+      "cha": 3,
+      "passive": 10,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Sting",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 4} ({@damage 1d6 + 1}) Piercing damage plus 5 ({@damage 2d4 - -1}) Poison damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "urban"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Flyby",
+          "entries": [
+            "The wasp doesn't provoke an Opportunity Attack when it flies out of an enemy's reach."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-wasp.opus"
+      },
+      "traitTags": [
+        "Flyby"
+      ]
+    },
+    {
+      "name": "Giant Weasel (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 27,
+        "formula": "3d8 + 3 + 0"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 30
+      },
+      "str": 13,
+      "dex": 15,
+      "con": 12,
+      "int": 4,
+      "wis": 12,
+      "cha": 5,
+      "skill": {
+        "acrobatics": "+4.0",
+        "perception": "+3.0",
+        "stealth": "+4.0"
+      },
+      "passive": 13,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 4} ({@damage 1d4 + 2}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-weasel.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 351
+        }
+      ]
+    },
+    {
+      "name": "Giant Wolf Spider (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 31,
+        "formula": "3d8 + 6 + 1"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "str": 14,
+      "dex": 14,
+      "con": 15,
+      "int": 3,
+      "wis": 12,
+      "cha": 4,
+      "skill": {
+        "perception": "+3.0",
+        "stealth": "+6.0"
+      },
+      "passive": 13,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 4} ({@damage 1d4 + 2}) Piercing damage plus 5 ({@damage 2d4 - -1}) Poison damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "desert",
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 10 ft.",
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "B",
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/giant-wolf-spider.opus"
+      },
+      "traitTags": [
+        "Spider Climb"
+      ]
+    },
+    {
+      "name": "Goat (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 27,
+        "formula": "3d8 + 3 + 0"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 30
+      },
+      "str": 13,
+      "dex": 8,
+      "con": 13,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "save": {
+        "str": "+3.0"
+      },
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 12,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Ram",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 2} Bludgeoning damage, or 2 ({@damage 1d4 + 1}) Bludgeoning damage if the goat moved 20+ feet straight toward the target immediately before the hit."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland",
+        "hill",
+        "mountain",
+        "urban"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/goat.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 351
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Hawk (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 6,
+        "formula": "(3d4 - 0 + 0) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 60
+      },
+      "str": 7,
+      "dex": 14,
+      "con": 10,
+      "int": 2,
+      "wis": 14,
+      "cha": 6,
+      "skill": {
+        "perception": "+6.0"
+      },
+      "passive": 16,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Talons",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 0} Slashing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic",
+        "coastal",
+        "forest",
+        "grassland",
+        "hill",
+        "mountain"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/hawk.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 352
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Hippopotamus (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 59,
+        "formula": "3d10 + 9 + 20"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 23,
+      "dex": 5,
+      "con": 17,
+      "int": 2,
+      "wis": 12,
+      "cha": 4,
+      "save": {
+        "str": "+8.0"
+      },
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "4",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The hippopotamus makes two Bite attacks."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 8}, reach 5 ft. {@h 17} ({@damage 2d10 + 6}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "swamp"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Hold Breath",
+          "entries": [
+            "The hippopotamus can hold its breath for 10 minutes."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Hold Breath"
+      ]
+    },
+    {
+      "name": "Hunter Shark (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 49,
+        "formula": "3d10 + 9 + 10"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 40
+      },
+      "str": 20,
+      "dex": 12,
+      "con": 17,
+      "int": 1,
+      "wis": 10,
+      "cha": 4,
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 12,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 7} (with {@variantrule Advantage|XPHB} if the target doesn't have all its {@variantrule Hit Points|XPHB}), reach 5 ft. {@h 15} ({@damage 3d6 + 5}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 60 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The shark can breathe only underwater."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/hunter-shark.opus"
+      },
+      "traitTags": [
+        "Water Breathing"
+      ]
+    },
+    {
+      "name": "Hyena (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 30,
+        "formula": "3d8 + 6 + 0"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 13,
+      "dex": 11,
+      "con": 14,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 4} ({@damage 1d6 + 1}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The hyena has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the hyena's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/hyena.opus"
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Jackal (5BB)",
+      "source": "5BB",
+      "size": [
+        "M"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 21,
+        "formula": "3d6 + 3 + 0"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 10,
+      "dex": 13,
+      "con": 13,
+      "int": 3,
+      "wis": 12,
+      "cha": 6,
+      "skill": {
+        "perception": "+5.0",
+        "stealth": "+3.0"
+      },
+      "passive": 15,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 2}, reach 5 ft. {@h 2} ({@damage 1d4 - 0}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "grassland"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 90 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/jackal.opus"
+      },
+      "familiar": true
+    },
+    {
+      "name": "Killer Whale (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 57,
+        "formula": "3d12 + 6 + 15"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 60
+      },
+      "str": 21,
+      "dex": 12,
+      "con": 15,
+      "int": 3,
+      "wis": 12,
+      "cha": 7,
+      "skill": {
+        "perception": "+3.0",
+        "stealth": "+3.0"
+      },
+      "passive": 13,
+      "cr": "3",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 5 ft. {@h 22} ({@damage 5d6 + 5}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 120 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Hold Breath",
+          "entries": [
+            "The whale can hold its breath for 30 minutes."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/killer-whale.opus"
+      },
+      "traitTags": [
+        "Hold Breath"
+      ]
+    },
+    {
+      "name": "Lion (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 38,
+        "formula": "3d10 + 3 + 5"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 19,
+      "dex": 13,
+      "con": 13,
+      "int": 3,
+      "wis": 12,
+      "cha": 8,
+      "skill": {
+        "perception": "+3.0",
+        "stealth": "+3.0"
+      },
+      "passive": 13,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The lion makes two Rend attacks. It can replace one attack with a use of Roar."
+          ]
+        },
+        {
+          "name": "Rend",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 8} ({@damage 1d8 + 4}) Slashing damage."
+          ]
+        },
+        {
+          "name": "Roar",
+          "entries": [
+            "{@actSave wis} {@dc 11}, one creature within 15 feet. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the start of the lion's next turn."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "grassland",
+        "hill",
+        "mountain"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "frightened"
+      ],
+      "savingThrowForced": [
+        "wisdom"
+      ],
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The lion has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the lion's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        },
+        {
+          "name": "Running Leap",
+          "entries": [
+            "With a 10-foot running start, the lion can {@variantrule Long Jump|XPHB} up to 25 feet."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/lion.opus"
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 352
+        }
+      ]
+    },
+    {
+      "name": "Lizard (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 15,
+        "formula": "3d4 + 3 + 0"
+      },
+      "speed": {
+        "walk": 20,
+        "climb": 20
+      },
+      "str": 4,
+      "dex": 9,
+      "con": 12,
+      "int": 1,
+      "wis": 8,
+      "cha": 3,
+      "passive": 9,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 1}, reach 5 ft. {@h 0} Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "desert",
+        "forest",
+        "swamp",
+        "underdark"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/lizard.opus"
+      },
+      "traitTags": [
+        "Spider Climb"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 353
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Mammoth (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 84,
+        "formula": "3d12 + 18 + 30"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 26,
+      "dex": 7,
+      "con": 23,
+      "int": 3,
+      "wis": 11,
+      "cha": 6,
+      "save": {
+        "str": "+10.0",
+        "con": "+8.0"
+      },
+      "passive": 10,
+      "cr": "6",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The mammoth makes two Gore attacks."
+          ]
+        },
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atkr m} {@hit 10}, reach 10 ft. {@h 19} ({@damage 2d10 + 8}) Piercing damage. If the target is a Huge or smaller creature and the mammoth moved 20+ feet straight toward it immediately before the hit, the target has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "initiative": {
+        "proficiency": 1
+      },
+      "conditionInflict": [
+        "prone"
+      ],
+      "savingThrowForced": [
+        "dexterity"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/mammoth.opus"
+      },
+      "bonus": [
+        {
+          "name": "Trample",
+          "entries": [
+            "{@actSave dex} {@dc 18}, one creature within 5 feet that has the {@condition Prone|XPHB} condition. {@actSaveFail} 29 ({@damage 4d10 + 7}) Bludgeoning damage. {@actSaveSuccess} Half damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mastiff (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 30,
+        "formula": "3d8 + 6 + 0"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 14,
+      "int": 3,
+      "wis": 12,
+      "cha": 7,
+      "skill": {
+        "perception": "+5.0"
+      },
+      "passive": 15,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 5} ({@damage 1d6 + 2}) Piercing damage. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "hill",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/mastiff.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 353
+        }
+      ]
+    },
+    {
+      "name": "Mule (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 30,
+        "formula": "3d8 + 6 + 0"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 16,
+      "dex": 8,
+      "con": 15,
+      "int": 2,
+      "wis": 10,
+      "cha": 5,
+      "save": {
+        "str": "+5.0"
+      },
+      "passive": 10,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Hooves",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 5} ({@damage 1d4 + 3}) Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "hill",
+        "urban"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Beast of Burden",
+          "entries": [
+            "The mule counts as one size larger for the purpose of determining its carrying capacity."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/mule.opus"
+      },
+      "traitTags": [
+        "Beast of Burden"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 353
+        }
+      ]
+    },
+    {
+      "name": "Octopus (5BB)",
+      "source": "5BB",
+      "size": [
+        "M"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 21,
+        "formula": "3d6 + 3 + 0"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 30
+      },
+      "str": 6,
+      "dex": 13,
+      "con": 13,
+      "int": 3,
+      "wis": 10,
+      "cha": 4,
+      "skill": {
+        "perception": "+2.0",
+        "stealth": "+5.0"
+      },
+      "passive": 12,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Tentacles",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 0} Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "actionTags": [
+        "Tentacles"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Compression",
+          "entries": [
+            "The octopus can move through a space as narrow as 1 inch without expending extra movement to do so."
+          ]
+        },
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The octopus can breathe only underwater."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/octopus.opus"
+      },
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 353
+        }
+      ],
+      "familiar": true,
+      "reaction": [
+        {
+          "name": "Ink Cloud (1/Day)",
+          "entries": [
+            "{@actTrigger} A creature ends its turn within 5 feet of the octopus while underwater. {@actResponse} The octopus releases ink that fills a 5-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} centered on itself, and the octopus moves up to its {@variantrule Swim Speed|XPHB}. The {@variantrule Cube [Area of Effect]|XPHB|Cube} is {@variantrule Heavily Obscured|XPHB} for 1 minute or until a strong current or similar effect disperses the ink."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Owl (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 6,
+        "formula": "(3d4 - 0 + 0) / 2"
+      },
+      "speed": {
+        "walk": 5,
+        "fly": 60
+      },
+      "str": 5,
+      "dex": 11,
+      "con": 10,
+      "int": 2,
+      "wis": 12,
+      "cha": 7,
+      "skill": {
+        "perception": "+5.0",
+        "stealth": "+4.0"
+      },
+      "passive": 15,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Talons",
+          "entries": [
+            "{@atkr m} {@hit 2}, reach 5 ft. {@h 0} Slashing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic",
+        "forest",
+        "hill"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 120 ft."
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "trait": [
+        {
+          "name": "Flyby",
+          "entries": [
+            "The owl doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks} when it flies out of an enemy's reach."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/owl.opus"
+      },
+      "traitTags": [
+        "Flyby"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 354
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Panther (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 28,
+        "formula": "3d8 + 3 + 1"
+      },
+      "speed": {
+        "walk": 50,
+        "climb": 40
+      },
+      "str": 16,
+      "dex": 14,
+      "con": 12,
+      "int": 3,
+      "wis": 14,
+      "cha": 7,
+      "skill": {
+        "perception": "+4.0",
+        "stealth": "+5.0"
+      },
+      "passive": 14,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Rend",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 5} ({@damage 1d6 + 2}) Slashing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/panther.opus"
+      },
+      "bonus": [
+        {
+          "name": "Nimble Escape",
+          "entries": [
+            "The panther takes the {@action Disengage|XPHB} or {@action Hide|XPHB} action."
+          ]
+        }
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 354
+        }
+      ]
+    },
+    {
+      "name": "Piranha (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 12,
+        "formula": "3d4 - 0 + 0"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 40
+      },
+      "str": 4,
+      "dex": 14,
+      "con": 11,
+      "int": 1,
+      "wis": 7,
+      "cha": 2,
+      "passive": 8,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4} (with {@variantrule Advantage|XPHB} if the target doesn't have all its {@variantrule Hit Points|XPHB}), reach 5 ft. {@h 0} Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The piranha can breathe only underwater."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Plesiosaurus (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 52,
+        "formula": "3d10 + 12 + 10"
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 40
+      },
+      "str": 20,
+      "dex": 13,
+      "con": 18,
+      "int": 2,
+      "wis": 12,
+      "cha": 5,
+      "skill": {
+        "perception": "+3.0",
+        "stealth": "+3.0"
+      },
+      "passive": 13,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 10 ft. {@h 12} ({@damage 2d6 + 5}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic",
+        "underwater"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Hold Breath",
+          "entries": [
+            "The plesiosaurus can hold its breath for 1 hour."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/plesiosaurus.opus"
+      },
+      "traitTags": [
+        "Hold Breath"
+      ],
+      "group": [
+        "Dinosaurs"
+      ]
+    },
+    {
+      "name": "Polar Bear (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 52,
+        "formula": "3d10 + 12 + 10"
+      },
+      "speed": {
+        "walk": 40,
+        "swim": 40
+      },
+      "str": 22,
+      "dex": 12,
+      "con": 18,
+      "int": 2,
+      "wis": 13,
+      "cha": 7,
+      "skill": {
+        "perception": "+5.0",
+        "stealth": "+3.0"
+      },
+      "passive": 15,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The bear makes two Rend attacks."
+          ]
+        },
+        {
+          "name": "Rend",
+          "entries": [
+            "{@atkr m} {@hit 8}, reach 5 ft. {@h 10} ({@damage 1d8 + 6}) Slashing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/polar-bear.opus"
+      },
+      "resist": [
+        "cold"
+      ]
+    },
+    {
+      "name": "Pony (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 30,
+        "formula": "3d8 + 6 + 0"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 17,
+      "dex": 8,
+      "con": 15,
+      "int": 2,
+      "wis": 11,
+      "cha": 7,
+      "save": {
+        "str": "+5.0"
+      },
+      "passive": 10,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Hooves",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 5} ({@damage 1d4 + 3}) Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland",
+        "urban"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/pony.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 354
+        }
+      ]
+    },
+    {
+      "name": "Pteranodon (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 14,
+        "formula": "(3d8 + 3 + 1) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 60
+      },
+      "str": 14,
+      "dex": 13,
+      "con": 12,
+      "int": 2,
+      "wis": 9,
+      "cha": 5,
+      "skill": {
+        "perception": "+1.0"
+      },
+      "passive": 11,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 5} ({@damage 1d8 + 1}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "grassland",
+        "mountain"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Flyby",
+          "entries": [
+            "The pteranodon doesn't provoke an Opportunity Attack when it flies out of an enemy's reach."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/pteranodon.opus"
+      },
+      "traitTags": [
+        "Flyby"
+      ],
+      "group": [
+        "Dinosaurs"
+      ]
+    },
+    {
+      "name": "Rat (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 12,
+        "formula": "3d4 - 0 + 0"
+      },
+      "speed": {
+        "walk": 20,
+        "climb": 20
+      },
+      "str": 4,
+      "dex": 9,
+      "con": 11,
+      "int": 2,
+      "wis": 10,
+      "cha": 4,
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 12,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 1}, reach 5 ft. {@h 0} Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "swamp",
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Agile",
+          "entries": [
+            "The rat doesn't provoke {@action Opportunity Attack|XPHB|Opportunity Attacks} when it moves out of an enemy's reach."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/rat.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 355
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Raven (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 7,
+        "formula": "(3d4 + 3 + 0) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 50
+      },
+      "str": 4,
+      "dex": 12,
+      "con": 12,
+      "int": 5,
+      "wis": 13,
+      "cha": 6,
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Beak",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 0} Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "hill",
+        "swamp",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Mimicry",
+          "entries": [
+            "The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful {@dc 10} Wisdom ({@skill Insight|XPHB}) check."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/raven.opus"
+      },
+      "traitTags": [
+        "Mimicry"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 355
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Reef Shark (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 32,
+        "formula": "3d8 + 6 + 2"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 30
+      },
+      "str": 16,
+      "dex": 13,
+      "con": 15,
+      "int": 1,
+      "wis": 10,
+      "cha": 4,
+      "skill": {
+        "perception": "+2.0"
+      },
+      "passive": 12,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 8} ({@damage 2d4 + 3}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 30 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The shark has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        },
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The shark can breathe only underwater."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/reef-shark.opus"
+      },
+      "traitTags": [
+        "Pack Tactics",
+        "Water Breathing"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 356
+        }
+      ]
+    },
+    {
+      "name": "Rhinoceros (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 49,
+        "formula": "3d10 + 9 + 10"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 23,
+      "dex": 6,
+      "con": 17,
+      "int": 2,
+      "wis": 12,
+      "cha": 6,
+      "passive": 11,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atkr m} {@hit 8}, reach 5 ft. {@h 15} ({@damage 2d8 + 6}) Piercing damage. If target is a Large or smaller creature and the rhinoceros moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 ({@damage 2d8 + 1}) Piercing damage and has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/rhinoceros.opus"
+      }
+    },
+    {
+      "name": "Riding Horse (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 37,
+        "formula": "3d10 + 6 + 1"
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 18,
+      "dex": 11,
+      "con": 14,
+      "int": 2,
+      "wis": 11,
+      "cha": 7,
+      "passive": 10,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Hooves",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 8} ({@damage 1d8 + 4}) Bludgeoning damage."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland",
+        "urban"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/riding-horse.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 356
+        }
+      ]
+    },
+    {
+      "name": "Saber-Toothed Tiger (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 49,
+        "formula": "3d10 + 9 + 10"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 20,
+      "dex": 15,
+      "con": 17,
+      "int": 3,
+      "wis": 12,
+      "cha": 8,
+      "save": {
+        "str": "+7.0",
+        "dex": "+4.0"
+      },
+      "skill": {
+        "perception": "+5.0",
+        "stealth": "+6.0"
+      },
+      "passive": 15,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The tiger makes two Rend attacks."
+          ]
+        },
+        {
+          "name": "Rend",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 5 ft. {@h 12} ({@damage 2d6 + 5}) Slashing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic",
+        "hill",
+        "mountain"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Running Leap",
+          "entries": [
+            "With a 10-foot running start, the tiger can {@variantrule Long Jump|XPHB} up to 25 feet."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/saber-toothed-tiger.opus"
+      },
+      "bonus": [
+        {
+          "name": "Nimble Escape",
+          "entries": [
+            "The tiger takes the {@action Disengage|XPHB} or {@action Hide|XPHB} action."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Scorpion (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 12,
+        "formula": "3d4 - 0 + 0"
+      },
+      "speed": {
+        "walk": 10
+      },
+      "str": 4,
+      "dex": 9,
+      "con": 10,
+      "int": 1,
+      "wis": 8,
+      "cha": 2,
+      "passive": 9,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Sting",
+          "entries": [
+            "{@atkr m} {@hit 1}, reach 5 ft. {@h 0} Piercing damage plus 3 ({@damage 1d6 - -1}) Poison damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 10 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/scorpion.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 356
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Seahorse (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 12,
+        "formula": "3d4 - 0 + 0"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 20
+      },
+      "str": 3,
+      "dex": 10,
+      "con": 10,
+      "int": 1,
+      "wis": 10,
+      "cha": 2,
+      "skill": {
+        "perception": "+2.0",
+        "stealth": "+4.0"
+      },
+      "passive": 12,
+      "cr": {
+        "cr": "0",
+        "xp": 0
+      },
+      "action": [
+        {
+          "name": "Bubble Dash",
+          "entries": [
+            "While underwater, the seahorse moves up to its {@variantrule Swim Speed|XPHB} without provoking {@action Opportunity Attack|XPHB|Opportunity Attacks}."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The seahorse can breathe only underwater."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Spider (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 12,
+        "formula": "3d4 - 0 + 0"
+      },
+      "speed": {
+        "walk": 20,
+        "climb": 20
+      },
+      "str": 4,
+      "dex": 12,
+      "con": 10,
+      "int": 1,
+      "wis": 10,
+      "cha": 2,
+      "skill": {
+        "stealth": "+3.0"
+      },
+      "passive": 10,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 0} Piercing damage plus 2 ({@damage 1d4 - -1}) Poison damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "forest",
+        "swamp",
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          ]
+        },
+        {
+          "name": "Web Walker",
+          "entries": [
+            "The spider ignores movement restrictions caused by webs, and the spider knows the location of any other creature in contact with the same web."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/spider.opus"
+      },
+      "traitTags": [
+        "Spider Climb",
+        "Web Walker"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 357
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Swarm of Bats (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": {
+        "type": "beast",
+        "swarmSize": "T"
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 17,
+        "formula": "(3d10 + 3 + 1) / 2"
+      },
+      "speed": {
+        "walk": 5,
+        "fly": 30
+      },
+      "str": 7,
+      "dex": 13,
+      "con": 12,
+      "int": 2,
+      "wis": 12,
+      "cha": 4,
+      "passive": 11,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bites",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 4} ({@damage 2d4 - -1}) Piercing damage, or 2 ({@damage 1d4 - -1}) Piercing damage if the swarm is {@status Bloodied|XPHB}."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "mountain",
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 60 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Swarm",
+          "entries": [
+            "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/swarm-of-bats.opus"
+      },
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "resist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    {
+      "name": "Swarm of Insects (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "beast",
+        "swarmSize": "T"
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 35,
+        "formula": "3d8 + 9 + 2"
+      },
+      "speed": {
+        "walk": 20,
+        "choose": {
+          "from": [
+            "climb",
+            "fly"
+          ],
+          "amount": 20,
+          "note": "(DM's choice)"
+        }
+      },
+      "str": 5,
+      "dex": 11,
+      "con": 16,
+      "int": 1,
+      "wis": 7,
+      "cha": 1,
+      "passive": 8,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Bites",
+          "entries": [
+            "{@atkr m} {@hit 2}, reach 5 ft. {@h 5} ({@damage 2d4 - 0}) Poison damage, or 3 ({@damage 1d4 - 0}) Poison damage if the swarm is {@status Bloodied|XPHB}."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "forest",
+        "grassland",
+        "hill",
+        "swamp",
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "I"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 30 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Spider Climb",
+          "entries": [
+            "If the swarm has a {@variantrule Climb Speed|XPHB}, the swarm can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+          ]
+        },
+        {
+          "name": "Swarm",
+          "entries": [
+            "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/swarm-of-insects.opus"
+      },
+      "traitTags": [
+        "Spider Climb"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "resist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    {
+      "name": "Swarm of Piranhas (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "beast",
+        "swarmSize": "T"
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 29,
+        "formula": "3d8 - 0 + 5"
+      },
+      "speed": {
+        "walk": 5,
+        "swim": 40
+      },
+      "str": 15,
+      "dex": 14,
+      "con": 11,
+      "int": 1,
+      "wis": 7,
+      "cha": 2,
+      "passive": 8,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Bites",
+          "entries": [
+            "{@atkr m} {@hit 4} (with {@variantrule Advantage|XPHB} if the target doesn't have all its {@variantrule Hit Points|XPHB}), reach 5 ft. {@h 7} ({@damage 2d4 + 2}) Piercing damage, or 5 ({@damage 1d4 + 2}) Piercing damage if the swarm is {@status Bloodied|XPHB}."
+          ]
+        }
+      ],
+      "environment": [
+        "underwater"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Swarm",
+          "entries": [
+            "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny piranha. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}."
+          ]
+        },
+        {
+          "name": "Water Breathing",
+          "entries": [
+            "The swarm can breathe only underwater."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Water Breathing"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "resist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    {
+      "name": "Swarm of Rats (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "beast",
+        "swarmSize": "T"
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 25,
+        "formula": "3d8 - 0 + 1"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 11,
+      "dex": 9,
+      "con": 11,
+      "int": 2,
+      "wis": 10,
+      "cha": 3,
+      "passive": 10,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bites",
+          "entries": [
+            "{@atkr m} {@hit 1}, reach 5 ft. {@h 4} ({@damage 2d4 - -1}) Piercing damage, or 2 ({@damage 1d4 - -1}) Piercing damage if the swarm is {@status Bloodied|XPHB}."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "swamp",
+        "underdark",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 30 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "trait": [
+        {
+          "name": "Swarm",
+          "entries": [
+            "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/swarm-of-rats.opus"
+      },
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "resist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    {
+      "name": "Swarm of Ravens (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "beast",
+        "swarmSize": "T"
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 15,
+        "formula": "(3d8 + 6 + 1) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 50
+      },
+      "str": 8,
+      "dex": 12,
+      "con": 14,
+      "int": 5,
+      "wis": 12,
+      "cha": 6,
+      "skill": {
+        "perception": "+5.0"
+      },
+      "passive": 15,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Beaks",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 4} ({@damage 1d6 + 1}) Piercing damage, or 2 ({@damage 1d4 - -1}) Piercing damage if the swarm is {@status Bloodied|XPHB}."
+          ]
+        },
+        {
+          "name": "Cacophony {@recharge}",
+          "entries": [
+            "{@actSave wis} {@dc 10}, one creature in the swarm's space. {@actSaveFail} The target has the {@condition Deafened|XPHB} condition until the start of the swarm's next turn. While {@condition Deafened|XPHB}, the target also has {@variantrule Disadvantage|XPHB} on ability checks and attack rolls."
+          ]
+        }
+      ],
+      "environment": [
+        "hill",
+        "swamp",
+        "urban"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "deafened"
+      ],
+      "savingThrowForced": [
+        "wisdom"
+      ],
+      "trait": [
+        {
+          "name": "Swarm",
+          "entries": [
+            "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny raven. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/swarm-of-ravens.opus"
+      },
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "resist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    {
+      "name": "Swarm of Venomous Snakes (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": {
+        "type": "beast",
+        "swarmSize": "T"
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 37,
+        "formula": "3d8 + 3 + 10"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 10,
+      "dex": 16,
+      "con": 13,
+      "int": 1,
+      "wis": 10,
+      "cha": 3,
+      "passive": 10,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Bites",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 7} ({@damage 1d8 + 3}) Piercing damage\u2014or 6 ({@damage 1d4 + 3}) Piercing damage if the swarm is {@status Bloodied|XPHB}\u2014plus 10 ({@damage 3d6 - -1}) Poison damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "desert",
+        "forest",
+        "grassland",
+        "hill",
+        "swamp"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 10 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "trait": [
+        {
+          "name": "Swarm",
+          "entries": [
+            "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain {@variantrule Hit Points|XPHB} or gain {@variantrule Temporary Hit Points|XPHB}."
+          ]
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "prone",
+        "restrained",
+        "stunned"
+      ],
+      "resist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    {
+      "name": "Tiger (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 44,
+        "formula": "3d10 + 9 + 5"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 19,
+      "dex": 14,
+      "con": 16,
+      "int": 3,
+      "wis": 12,
+      "cha": 8,
+      "skill": {
+        "perception": "+3.0",
+        "stealth": "+6.0"
+      },
+      "passive": 13,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Rend",
+          "entries": [
+            "{@atkr m} {@hit 6}, reach 5 ft. {@h 11} ({@damage 2d6 + 4}) Slashing damage. If the target is a Large or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/tiger.opus"
+      },
+      "bonus": [
+        {
+          "name": "Nimble Escape",
+          "entries": [
+            "The tiger takes the {@action Disengage|XPHB} or {@action Hide|XPHB} action."
+          ]
+        }
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 358
+        }
+      ]
+    },
+    {
+      "name": "Triceratops (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        17
+      ],
+      "hp": {
+        "average": 73,
+        "formula": "3d12 + 12 + 25"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 24,
+      "dex": 7,
+      "con": 19,
+      "int": 2,
+      "wis": 11,
+      "cha": 5,
+      "passive": 10,
+      "cr": "5",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The triceratops makes two Gore attacks."
+          ]
+        },
+        {
+          "name": "Gore",
+          "entries": [
+            "{@atkr m} {@hit 9}, reach 5 ft. {@h 20} ({@damage 2d12 + 7}) Piercing damage. If the target is Huge or smaller and the triceratops moved 20+ feet straight toward it immediately before the hit, the target takes an extra 9 ({@damage 2d8 + 1}) Piercing damage and has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/triceratops.opus"
+      },
+      "group": [
+        "Dinosaurs"
+      ]
+    },
+    {
+      "name": "Tyrannosaurus Rex (5BB)",
+      "source": "5BB",
+      "size": [
+        "G"
+      ],
+      "type": {
+        "type": "beast",
+        "tags": [
+          "dinosaur"
+        ]
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 91,
+        "formula": "3d12 + 15 + 40"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 27,
+      "dex": 8,
+      "con": 21,
+      "int": 2,
+      "wis": 12,
+      "cha": 9,
+      "save": {
+        "str": "+10.0",
+        "wis": "+3.0"
+      },
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 14,
+      "cr": "8",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The tyrannosaurus makes one Bite attack and one Tail attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 10}, reach 10 ft. {@h 34} ({@damage 4d12 + 8}) Piercing damage. If the target is a Large or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 17}). While {@condition Grappled|XPHB}, the target has the {@condition Restrained|XPHB} condition and can't be targeted by the tyrannosaurus's Tail."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atkr m} {@hit 10}, reach 15 ft. {@h 26} ({@damage 4d8 + 8}) Bludgeoning damage. If the target is a Huge or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "grassland"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P"
+      ],
+      "miscTags": [
+        "MA",
+        "RCH"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "initiative": {
+        "proficiency": 1
+      },
+      "conditionInflict": [
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/tyrannosaurus-rex.opus"
+      },
+      "group": [
+        "Dinosaurs"
+      ]
+    },
+    {
+      "name": "Venomous Snake (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 15,
+        "formula": "3d4 + 3 + 0"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "str": 4,
+      "dex": 13,
+      "con": 13,
+      "int": 1,
+      "wis": 10,
+      "cha": 3,
+      "passive": 10,
+      "cr": "1/8",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 3}, reach 5 ft. {@h 3} ({@damage 1d4 + 1}) Piercing damage plus 3 ({@damage 1d6 - -1}) Poison damage."
+          ]
+        }
+      ],
+      "environment": [
+        "coastal",
+        "desert",
+        "forest",
+        "grassland",
+        "hill",
+        "swamp"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Blindsight 10 ft."
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 358
+        }
+      ]
+    },
+    {
+      "name": "Vulture (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        13
+      ],
+      "hp": {
+        "average": 15,
+        "formula": "(3d8 + 6 + 0) / 2"
+      },
+      "speed": {
+        "walk": 10,
+        "fly": 50
+      },
+      "str": 9,
+      "dex": 8,
+      "con": 15,
+      "int": 2,
+      "wis": 12,
+      "cha": 4,
+      "skill": {
+        "perception": "+3.0"
+      },
+      "passive": 13,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Beak",
+          "entries": [
+            "{@atkr m} {@hit 1}, reach 5 ft. {@h 1} ({@damage 1d4 - -1}) Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The vulture has {@variantrule Advantage|XPHB} on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/vulture.opus"
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Warhorse (5BB)",
+      "source": "5BB",
+      "size": [
+        "H"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        14
+      ],
+      "hp": {
+        "average": 38,
+        "formula": "3d10 + 6 + 2"
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 20,
+      "dex": 10,
+      "con": 15,
+      "int": 2,
+      "wis": 12,
+      "cha": 7,
+      "save": {
+        "wis": "+3.0"
+      },
+      "passive": 11,
+      "cr": "1/2",
+      "action": [
+        {
+          "name": "Hooves",
+          "entries": [
+            "{@atkr m} {@hit 7}, reach 5 ft. {@h 10} ({@damage 2d4 + 5}) Bludgeoning damage. If the target is a Large or smaller creature and the horse moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 ({@damage 2d4 + 1}) Bludgeoning damage and has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "urban"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "conditionInflict": [
+        "prone"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/war-horse.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 359
+        }
+      ]
+    },
+    {
+      "name": "Weasel (5BB)",
+      "source": "5BB",
+      "size": [
+        "S"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        16
+      ],
+      "hp": {
+        "average": 12,
+        "formula": "3d4 - 0 + 0"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 5,
+      "dex": 14,
+      "con": 10,
+      "int": 2,
+      "wis": 12,
+      "cha": 3,
+      "skill": {
+        "acrobatics": "+4.0",
+        "perception": "+3.0",
+        "stealth": "+4.0"
+      },
+      "passive": 13,
+      "cr": "0",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 4}, reach 5 ft. {@h 0} Piercing damage."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/weasel.opus"
+      },
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 359
+        }
+      ],
+      "familiar": true
+    },
+    {
+      "name": "Wolf (5BB)",
+      "source": "5BB",
+      "size": [
+        "L"
+      ],
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        15
+      ],
+      "hp": {
+        "average": 31,
+        "formula": "3d8 + 6 + 1"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 16,
+      "dex": 13,
+      "con": 14,
+      "int": 3,
+      "wis": 12,
+      "cha": 6,
+      "skill": {
+        "perception": "+5.0",
+        "stealth": "+3.0"
+      },
+      "passive": 15,
+      "cr": "1/4",
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atkr m} {@hit 5}, reach 5 ft. {@h 6} ({@damage 1d6 + 3}) Piercing damage. If the target is a Medium or smaller creature, it has the {@condition Prone|XPHB} condition."
+          ]
+        }
+      ],
+      "environment": [
+        "forest",
+        "grassland",
+        "hill"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MA"
+      ],
+      "hasToken": true,
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "senses": [
+        "Darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The wolf has {@variantrule Advantage|XPHB} on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the {@condition Incapacitated|XPHB} condition."
+          ]
+        }
+      ],
+      "soundClip": {
+        "type": "internal",
+        "path": "bestiary/wolf.opus"
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ],
+      "otherSources": [
+        {
+          "source": "XPHB",
+          "page": 359
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "sources": [
+      {
+        "json": "5BB",
+        "abbreviation": "5BBTmp",
+        "full": "5 Banners Burning (Tmp)",
+        "version": "0.1.0",
+        "authors": [
+          "Josias Brenner"
+        ],
+        "convertedBy": [
+          "Josias Brenner"
+        ],
+        "color": "b8411a"
+      }
+    ],
+    "dateAdded": 1776156420,
+    "dateLastModified": 1776625838,
+    "edition": "one",
+    "status": "wip"
+  }
+}
