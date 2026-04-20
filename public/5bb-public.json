@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1776625838,
+    "dateLastModified": 1776682215,
     "edition": "one",
     "status": "wip"
   },
@@ -23,8 +23,7 @@
       "creatureTypes": ["humanoid"],
       "size": ["M"],
       "speed": {
-        "walk": 25,
-        "fly": 50
+        "walk": 25
       },
       "darkvision": 60,
       "resist": ["fire"],
@@ -56,7 +55,7 @@
           "type": "entries",
           "name": "Draconic Wings",
           "entries": [
-            "Because of two leathery wings on your back, you have a {@variantrule Fly Speed|XPHB} equal to twice your {@variantrule Speed|XPHB}. You can't use this flying speed if you're wearing medium or heavy armor."
+            "You have two leathery wings on your back that allow you to fly. You can use a {@variantrule Bonus Action|XPHB} to gain a {@variantrule Fly Speed|XPHB} equal to twice your {@variantrule Speed|XPHB} for this turn."
           ]
         },
         {
@@ -77,7 +76,7 @@
           "name": "Celestial Revelation",
           "entries": [
             "When you reach character level 3, you can transform as a {@variantrule Bonus Action|XPHB} using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a {@variantrule Long Rest|XPHB}.",
-            "Once on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and the extra damage's type is either Fire for Fire and Shadow or Radiant for Inner Radiance.",
+            "Once on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and the extra damage's type is either Fire for {@b Fire and Shadow} or Radiant for {@b Inner Radiance}.",
             "Here are the transformation options:",
             {
               "type": "list",
@@ -297,7 +296,7 @@
         "tools": ["{@item Herbalism Kit|XPHB}"],
         "toolProficiencies": [
           {
-            "herbalism kit": true
+            "navigator's tools": true
           }
         ],
         "skills": [
@@ -465,7 +464,7 @@
       "classSource": "5BBPublic",
       "level": 1,
       "entries": [
-        "You know one extra cantrip from the {@filter Druid spell list|spells|class=Druid}. In addition, your mystical connection to nature gives you a bonus to your Intelligence ({@skill Arcana|XPHB} or {@skill Nature|XPHB}) checks. The bonus equals your Charisma modifier (minimum bonus of +1)."
+        "You know one extra cantrip from the {@filter Druid spell list|spells|class=Druid}. In addition, your personal connection to nature gives you a bonus to your Intelligence ({@skill Nature|XPHB}) checks equal to your Charisma modifier (minimum bonus of +1) and you can use Charisma ({@skill Persuasion|XPHB}) checks instead of Wisdom ({@skill Animal Handling|XPHB}) checks to interact with animals."
       ]
     },
     {
@@ -555,7 +554,7 @@
       "classSource": "5BBPublic",
       "level": 2,
       "entries": [
-        "The power of nature allows you to assume the form of an animal. As a {@variantrule Bonus Action|XPHB}, you shape-shift into a Beast form. You stay in that form for a number of hours equal to half your Shapeshifter level or until you use Wild Shape again, have the {@condition Incapacitated|XPHB} condition, or die. You can also leave the form early as a {@variantrule Bonus Action|XPHB}.",
+        "The power of nature allows you to assume the form of an animal. As a {@variantrule Bonus Action|XPHB}, you shape-shift into an animal form. You stay in that form for a number of hours equal to half your Shapeshifter level or until you use Wild Shape again, have the {@condition Incapacitated|XPHB} condition, or die. You can also leave the form early as a {@variantrule Bonus Action|XPHB}.",
         {
           "type": "entries",
           "entries": [
@@ -569,32 +568,9 @@
             },
             {
               "type": "entries",
-              "name": "Known Forms",
+              "name": "Animal Shapes",
               "entries": [
-                "You know four Beast forms for this feature, chosen from among Beast stat blocks that have a maximum {@variantrule Challenge Rating|XPHB} of 1/4 and that lack a {@variantrule Fly Speed|XPHB} (see appendix B for stat block options). The {@creature Rat|XMM}, {@creature Riding Horse|XMM}, {@creature Spider|XMM}, and {@creature Wolf|XMM} are recommended. Whenever you finish a {@variantrule Long Rest|XPHB}, you can replace one of your known forms with another eligible form.",
-                "When you reach certain Shapeshifter levels, your number of known forms and the maximum {@variantrule Challenge Rating|XPHB} for those forms increases, as shown in the Beast Shapes table. In addition, starting at level 8, you can adopt a form that has a {@variantrule Fly Speed|XPHB}.",
-                "When choosing known forms, you may look in the {@book Monster Manual|XMM} or elsewhere for eligible Beasts if the Dungeon Master permits you to do so."
-              ]
-            },
-            {
-              "type": "table",
-              "caption": "Beast Shapes",
-              "colLabels": ["Shapeshifter Level", "Known Forms", "Max CR", "Fly Speed"],
-              "colStyles": ["col-3 text-center", "col-3 text-center", "col-3 text-center"],
-              "rows": [
-                [
-                  "2",
-                  "4",
-                  "{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly|miscellaneous=!swarm}",
-                  "No"
-                ],
-                [
-                  "4",
-                  "6",
-                  "{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
-                  "No"
-                ],
-                ["8", "8", "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}", "Yes"]
+                "You can transform into any {@filter Beast|bestiary|type=beast|miscellaneous=!swarm} or animal-like {@filter Monstrosity|bestiary|type=monstrosity|miscellaneous=!swarm}, as long as the creature's Challenge Rating is at or below your Shapeshifter level minus 1 all divided by 2."
               ]
             },
             {
@@ -608,16 +584,32 @@
                   "items": [
                     {
                       "type": "item",
-                      "name": "Temporary Hit Points",
+                      "name": "To Big to Fail",
                       "entries": [
-                        "When you assume a Wild Shape form, you gain a number of {@variantrule Temporary Hit Points|XPHB} equal to your Shapeshifter level."
+                        "You shape shift into a form larger than usual for the type of animal you transform into. For the purpose of this section the animal's stat block is modified in the following ways:",
+                        {
+                          "type": "list",
+                          "items": [
+                            "The creature's size increases by one category, it Strength score and Constitution scores each increase by 2, and its Dexterity score decreases by 2.",
+                            "For calculating the creature's maximum Hit Points, you use the highest value on its Hit Point Dice and your level as the number of dice. They additionally gain 5 maximum Hit Points per CR (rounded down) of the creature's stat block. If the creature has a {@variantrule Fly Speed|XPHB}, its maximum Hit Points are halved (rounded down).",
+                            "You gain advantage on Strength checks and Strength saving throws. Damage you do to objects, structures and the environment is doubled.",
+                            "The creature's armor class increases by an amount equal to your Charisma modifier."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "item",
+                      "name": "Hit Points",
+                      "entries": [
+                        "When you assume a Wild Shape form, your maximum {@variantrule Hit Points|XPHB} increase by the animal form's maximum Hit Points. Your current Hit Points adjust to keep the same percentage of your maximum Hit Points (rounded up). When you revert to your normal form or change to a new form, your maximum Hit Points reset or adjust to your humanoids maximum Hit Points plus the new form's maximum Hit Points respectively with your current Hit Points adjusting to keep the same percentage of your maximum Hit Points (rounded up)."
                       ]
                     },
                     {
                       "type": "item",
                       "name": "Game Statistics",
                       "entries": [
-                        "Your game statistics are replaced by the Beast's stat block, but you retain your creature type; {@variantrule Hit Points|XPHB}; {@variantrule Hit Point Dice|XPHB}; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your {@variantrule Proficiency|XPHB|Proficiency Bonus} for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block."
+                        "Your game statistics are replaced by the animal's stat block, but you retain your creature type; {@variantrule Hit Point Dice|XPHB}; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your {@variantrule Proficiency|XPHB|Proficiency Bonus} for them and your attack modifier, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the animal's stat block is higher than yours, use the one in the stat block."
                       ]
                     },
                     {
@@ -654,8 +646,22 @@
         "Changeable as the moon, a Shapeshifter of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Shapeshifter's blood.",
         {
           "type": "refClassFeature",
+          "classFeature": "Defensive Wild Shape|Shapeshifter|5BBPublic|3"
+        },
+        {
+          "type": "refClassFeature",
           "classFeature": "Circle of the Moon Spells|Shapeshifter|5BBPublic|3"
         }
+      ]
+    },
+    {
+      "name": "Defensive Wild Shape",
+      "source": "5BBPublic",
+      "className": "Shapeshifter",
+      "classSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "Starting at level 3, you can use your Wild Shape as a {@variantrule Reaction|XPHB} when you're about to take damage. Spend a use of Wild Shape to shape shift into a random animal form. Roll one die to select a CR uniformly from the whole number CRs you can transform into and then select a form from all that floor to that CR at random."
       ]
     },
     {
@@ -775,7 +781,7 @@
       "level": 7,
       "header": 2,
       "entries": [
-        "Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra {@damage 1d8} Cold, Fire, Lightning, or Thunder damage (choose when you hit)."
+        "Once on each of your turns when you hit a creature with an attack roll using a weapon or a animal form's attack in Wild Shape, you can cause the target to take an extra {@damage 1d8} Cold, Fire, Lightning, or Thunder damage (choose when you hit)."
       ]
     },
     {
