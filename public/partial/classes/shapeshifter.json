@@ -1,258 +1,4 @@
 {
-  "_meta": {
-    "sources": [
-      {
-        "json": "5BBPublic",
-        "abbreviation": "5BB",
-        "full": "5 Banners Burning",
-        "version": "0.1.0",
-        "authors": ["Josias Brenner"],
-        "convertedBy": ["Josias Brenner"],
-        "color": "b8411a"
-      }
-    ],
-    "dateAdded": 1776156420,
-    "dateLastModified": 1777136605,
-    "edition": "one",
-    "status": "wip"
-  },
-  "itemMastery": [
-    {
-      "name": "Sneaky Nick",
-      "source": "5BBPublic",
-      "entries": [
-        "When you make the extra attack of the Light property, you can make it as part of the {@action Attack|XPHB} action instead of as a {@variantrule Bonus Action|XPHB}. You can make this extra attack only once per turn.",
-        "If you make this extra attack immediately after an attack of the {@action Attack|XPHB} action that you have {@variantrule Advantage|XPHB} on from the {@condition Invisible|XPHB} condition, you can make the attack roll of the extra attack with {@variantrule Advantage|XPHB}."
-      ]
-    }
-  ],
-  "feat": [
-    {
-      "name": "Savage Attacker (5BB)",
-      "source": "5BBPublic",
-      "category": "O",
-      "entries": [
-        "When you hit with a weapon, you can reroll any 1 or 2 on a damage die and must use the new roll, even if the new roll is a 1 or a 2."
-      ]
-    }
-  ],
-  "item": [
-    {
-      "name": "Pump-Action Crossbow",
-      "source": "5BBPublic",
-      "type": "R",
-      "rarity": "none",
-      "weight": 12,
-      "value": 10000,
-      "weaponCategory": "simple",
-      "property": ["A", "LD", "2H"],
-      "mastery": ["Push"],
-      "range": "30/90",
-      "dmg1": "1d10",
-      "dmgType": "P",
-      "ammoType": "bolt"
-    },
-    {
-      "name": "Brandur's Sword Hilt",
-      "source": "5BBPublic",
-      "type": "M",
-      "rarity": "very rare",
-      "reqAttune": true,
-      "weight": 1,
-      "weaponCategory": "martial",
-      "property": ["V"],
-      "dmg1": "1d8",
-      "dmgType": "S",
-      "dmg2": "1d10",
-      "baseItem": "longsword|xphb",
-      "bonusWeapon": "+1",
-      "focus": ["Warlock"],
-      "entries": [
-        "You have a +1 bonus to attack and damage rolls made with this magic weapon.",
-        {
-          "type": "entries",
-          "name": "Broken Sword",
-          "entries": [
-            "This weapon functions as a {@variantrule Spellcasting Focus |XPHB} and a Warlock's pact weapon.",
-            "As a {@variantrule Bonus Action |XPHB}, you can conjure a spectral blade from the hilt to attack with or dismiss it."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Multielementalism",
-          "entries": [
-            "When you hit a creature with this weapon, you can choose to deal one of the following damage types instead of the weapons normal damage: Acid, Cold, Fire, Lightning, or Thunder."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Utak's Warhammer",
-      "source": "5BBPublic",
-      "type": "M",
-      "rarity": "rare",
-      "weight": 5,
-      "weaponCategory": "martial",
-      "property": ["V"],
-      "dmg1": "1d8",
-      "dmgType": "B",
-      "dmg2": "1d10",
-      "baseItem": "warhammer|xphb",
-      "bonusWeapon": "+1",
-      "entries": ["You have a +1 bonus to attack and damage rolls made with this magic weapon."]
-    },
-    {
-      "name": "Silencari Dagger",
-      "source": "5BBPublic",
-      "type": "M",
-      "rarity": "rare",
-      "weight": 1,
-      "weaponCategory": "martial",
-      "property": ["F", "L", "T"],
-      "mastery": ["Sneaky Nick|5BBPublic"],
-      "range": "30/60",
-      "dmg1": "1d6",
-      "dmgType": "P",
-      "bonusWeapon": "+1",
-      "entries": ["You have a +1 bonus to attack and damage rolls made with this magic weapon."]
-    },
-    {
-      "name": "Staff of Enthrallment",
-      "source": "5BBPublic",
-      "type": "M",
-      "rarity": "rare",
-      "weight": 4,
-      "weaponCategory": "simple",
-      "reqAttune": "by a Spellcaster",
-      "property": ["V"],
-      "mastery": ["Topple|XPHB"],
-      "dmg1": "1d6",
-      "dmgType": "B",
-      "dmg2": "1d8",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Mind Controlling",
-          "entries": [
-            "You can cast the {@spell Mind Sliver|XPHB} cantrip from this staff using your spellcasting or pact magic feature."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Enthralling",
-          "entries": [
-            "You can add {@dice 1d4} to any {@skill Persuasion|XPHB} roll you make. On a 4, you can no longer use this feature until you finish a {@variantrule Short Rest|XPHB}."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Parrying",
-          "entries": [
-            "When you are hit with a melee attack roll while wielding this staff with two hands, you can take a {@variantrule Reaction|XPHB} to add 2 to your AC for that attack, potentially causing the attack to miss."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Homing Compasses",
-      "source": "5BBPublic",
-      "wondrous": true,
-      "rarity": "uncommon",
-      "entries": [
-        "Homing Compasses come in pairs, with each pointing towards the other one as long as both are on the same plane of existence."
-      ]
-    },
-    {
-      "name": "Bag of Ficklesand",
-      "source": "5BBPublic",
-      "wondrous": true,
-      "rarity": "uncommon",
-      "weight": 2,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Heavy Sand",
-          "entries": [
-            "While the bag can hear you, you can make a {@skill Performance|XPHB} check (DC 10) as a {@variantrule Bonus Action|XPHB} to convince the bag of sand to increase its weight to 200 lb. or decrease its weight back to 2 lb.."
-          ]
-        }
-      ]
-    }
-  ],
-  "race": [
-    {
-      "name": "Dragonborn (Aasimar)",
-      "source": "5BBPublic",
-      "creatureTypes": ["humanoid"],
-      "size": ["M"],
-      "speed": { "walk": 25 },
-      "darkvision": 60,
-      "resist": ["fire"],
-      "additionalSpells": [{ "ability": "cha", "known": { "1": ["light|xphb#c"] } }],
-      "sizeEntry": { "type": "item", "name": "Size:", "entries": ["Medium (about 5-7 feet tall)"] },
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Fire Resistance",
-          "entries": ["You have {@variantrule Resistance|XPHB} to Fire damage."]
-        },
-        {
-          "type": "entries",
-          "name": "Darkvision",
-          "entries": ["You have {@sense Darkvision|XPHB} with a range of 60 feet."]
-        },
-        {
-          "type": "entries",
-          "name": "Draconic Wings",
-          "entries": [
-            "You have two leathery wings on your back that allow you to fly. You can use a {@variantrule Bonus Action|XPHB} to gain a {@variantrule Fly Speed|XPHB} equal to twice your {@variantrule Speed|XPHB} for this turn."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Light Bearer",
-          "entries": ["You know the {@spell Light|XPHB} cantrip. Charisma is your spellcasting ability for it."]
-        },
-        {
-          "type": "entries",
-          "name": "Breath Weapon",
-          "entries": [
-            "As an {@variantrule Action|XPHB}, you exhale Fire in either a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} or a 30-foot {@variantrule Line [Area of Effect]|XPHB|Line} that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw ({@dc 8} plus your Charisma modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, a creature takes {@damage 1d10} Fire damage. On a successful save, a creature takes half as much damage. This damage increases by {@damage 1d10} when you reach character levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10}).",
-            "You can use this Breath Weapon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Celestial Revelation",
-          "entries": [
-            "When you reach character level 3, you can transform as a {@variantrule Bonus Action|XPHB} using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a {@variantrule Long Rest|XPHB}.",
-            "Once on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and the extra damage's type is either Fire for {@b Fire and Shadow} or Radiant for {@b Inner Radiance}.",
-            "Here are the transformation options:",
-            {
-              "type": "list",
-              "style": "list-hang-notitle",
-              "items": [
-                {
-                  "type": "item",
-                  "name": "Inner Radiance",
-                  "entries": [
-                    "Searing light temporarily radiates from your eyes and mouth. For the duration, you shed {@variantrule Bright Light|XPHB} in a 10-foot radius and {@variantrule Dim Light|XPHB} for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}."
-                  ]
-                },
-                {
-                  "type": "item",
-                  "name": "Fire and Shadow",
-                  "entries": [
-                    "Your eyes briefly become pools of darkness, and fiery wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw ({@dc 8} plus your Charisma modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}) or have the {@condition Frightened|XPHB} condition until the end of your next turn."
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "class": [
     {
       "name": "Shapeshifter",
@@ -278,12 +24,24 @@
           }
         }
       ],
-      "featProgression": [{ "name": "Epic Boon", "category": ["EB"], "progression": { "19": 1 } }],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": ["EB"],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
       "startingProficiencies": {
         "armor": ["light", "shield"],
         "weapons": ["simple"],
         "tools": ["{@item Herbalism Kit|XPHB}"],
-        "toolProficiencies": [{ "navigator's tools": true }],
+        "toolProficiencies": [
+          {
+            "navigator's tools": true
+          }
+        ],
         "skills": [
           {
             "choose": {
@@ -304,10 +62,18 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "defaultData": [{ "A": [{ "value": 5000 }] }],
+        "defaultData": [
+          {
+            "A": [{ "value": 5000 }]
+          }
+        ],
         "entries": ["50 GP"]
       },
-      "multiclassing": { "proficienciesGained": { "armor": ["light", "shield"] } },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": ["light", "shield"]
+        }
+      },
       "classTableGroups": [
         {
           "colLabels": [
@@ -420,8 +186,14 @@
               "type": "options",
               "count": 1,
               "entries": [
-                { "type": "refClassFeature", "classFeature": "Magician|Shapeshifter|5BBPublic|1" },
-                { "type": "refClassFeature", "classFeature": "Warden|Shapeshifter|5BBPublic|1" }
+                {
+                  "type": "refClassFeature",
+                  "classFeature": "Magician|Shapeshifter|5BBPublic|1"
+                },
+                {
+                  "type": "refClassFeature",
+                  "classFeature": "Warden|Shapeshifter|5BBPublic|1"
+                }
               ]
             }
           ]
@@ -615,8 +387,14 @@
         "{@i Adopt Animal Forms to Guard the Wilds}",
         "Shapeshifters of the Circle of the Moon draw on lunar magic to transform themselves. Their order gathers under the moon to share news and perform rituals.",
         "Changeable as the moon, a Shapeshifter of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Shapeshifter's blood.",
-        { "type": "refClassFeature", "classFeature": "Defensive Wild Shape|Shapeshifter|5BBPublic|3" },
-        { "type": "refClassFeature", "classFeature": "Circle of the Moon Spells|Shapeshifter|5BBPublic|3" }
+        {
+          "type": "refClassFeature",
+          "classFeature": "Defensive Wild Shape|Shapeshifter|5BBPublic|3"
+        },
+        {
+          "type": "refClassFeature",
+          "classFeature": "Circle of the Moon Spells|Shapeshifter|5BBPublic|3"
+        }
       ]
     },
     {
@@ -715,8 +493,14 @@
               "type": "options",
               "count": 1,
               "entries": [
-                { "type": "refClassFeature", "classFeature": "Potent Spellcasting|Shapeshifter|5BBPublic|7" },
-                { "type": "refClassFeature", "classFeature": "Primal Strike|Shapeshifter|5BBPublic|7" }
+                {
+                  "type": "refClassFeature",
+                  "classFeature": "Potent Spellcasting|Shapeshifter|5BBPublic|7"
+                },
+                {
+                  "type": "refClassFeature",
+                  "classFeature": "Primal Strike|Shapeshifter|5BBPublic|7"
+                }
               ]
             }
           ]
@@ -895,285 +679,6 @@
           ]
         }
       ]
-    }
-  ],
-  "subclass": [
-    {
-      "name": "Multielemental Hexblade",
-      "shortName": "Multielemental Hexblade",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "additionalSpells": [
-        {
-          "expanded": {
-            "s1": ["shield", "wrathful smite"],
-            "s2": ["blur", "branding smite"],
-            "s3": ["blink", "elemental weapon"],
-            "s4": ["phantasmal killer", "staggering smite"],
-            "s5": ["banishing smite", "cone of cold"]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Multielemental Hexblade|Warlock|XPHB|Multielemental Hexblade|5BBPublic|3|5BBPublic",
-        "Accursed Specter|Warlock|XPHB|Multielemental Hexblade|5BBPublic|6|5BBPublic",
-        "Armor of Hexes|Warlock|XPHB|Multielemental Hexblade|5BBPublic|10|5BBPublic",
-        "Master of Hexes|Warlock|XPHB|Multielemental Hexblade|5BBPublic|14|5BBPublic"
-      ]
-    },
-    {
-      "name": "Silencari Assassin",
-      "shortName": "Silencari Assassin",
-      "source": "5BBPublic",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "subclassFeatures": [
-        "Silencari Assassin|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic",
-        "Infiltration Expertise|Rogue|XPHB|Silencari Assassin|5BBPublic|9|5BBPublic",
-        "Envenom Weapons|Rogue|XPHB|Silencari Assassin|5BBPublic|13|5BBPublic",
-        "Death Strike|Rogue|XPHB|Silencari Assassin|5BBPublic|17|5BBPublic"
-      ]
-    }
-  ],
-  "subclassFeature": [
-    {
-      "name": "Multielemental Hexblade",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "subclassShortName": "Multielemental Hexblade",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": [
-        "You have made your pact with a mysterious entity from the Shadowfell—a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many Hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.",
-        "Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with Hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Hexblade Spells|Warlock|XPHB|Multielemental Hexblade|5BBPublic|3|5BBPublic"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Hexblade's Curse|Warlock|XPHB|Multielemental Hexblade|5BBPublic|3|5BBPublic"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Hex Warrior|Warlock|XPHB|Multielemental Hexblade|5BBPublic|3|5BBPublic"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Elemental Transmutation|Warlock|XPHB|Multielemental Hexblade|5BBPublic|3|5BBPublic"
-        }
-      ]
-    },
-    {
-      "name": "Hexblade Spells",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "subclassShortName": "Multielemental Hexblade",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": [
-        "When you reach a warlock level specified in the Hexblade Spells table, you gain the listed spells as warlock spells that are always prepared. These spells don't count against the number of warlock spells you can prepare.",
-        {
-          "type": "table",
-          "caption": "Hexblade Spells",
-          "colLabels": ["Warlock Level", "Spells"],
-          "colStyles": ["col-2 text-center", "col-10"],
-          "rows": [
-            ["3st", "{@spell shield}, {@spell wrathful smite}, {@spell blur}, {@spell branding smite}"],
-            ["5rd", "{@spell blink}, {@spell elemental weapon}"],
-            ["7th", "{@spell phantasmal killer}, {@spell staggering smite}"],
-            ["9th", "{@spell banishing smite}, {@spell cone of cold}"]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Hexblade's Curse",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "subclassShortName": "Multielemental Hexblade",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": [
-        "Starting at 3rd level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are {@condition incapacitated}. Until the curse ends, you gain the following benefits:",
-        {
-          "type": "list",
-          "items": [
-            "You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.",
-            "Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the {@dice d20}.",
-            "If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point)."
-          ]
-        },
-        "You can't use this feature again until you finish a short or long rest."
-      ]
-    },
-    {
-      "name": "Hex Warrior",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "subclassShortName": "Multielemental Hexblade",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": [
-        "At 3rd level, you acquire the training necessary to effectively arm yourself for battle. You gain proficiency with medium armor, shields, and martial weapons."
-      ]
-    },
-    {
-      "name": "Elemental Transmutation",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "subclassShortName": "Multielemental Hexblade",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": [
-        "Immediately after casting a warlock spell that deals Acid, Cold, Fire, Lightning, or Thunder damage, you can use a {@variantrule Bonus Action|XPHB} to change one of thouse damage types to a different one from that list."
-      ]
-    },
-    {
-      "name": "Accursed Specter",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "subclassShortName": "Multielemental Hexblade",
-      "subclassSource": "5BBPublic",
-      "level": 6,
-      "entries": [
-        "Starting at 6th level, you can curse the soul of a person you slay, temporarily binding it to your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a {@creature specter}, the statistics for which are in the Monster Manual. When the specter appears, it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack rolls equal to your Charisma modifier (minimum of +0).",
-        "The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife.",
-        "Once you bind a specter with this feature, you can't use the feature again until you finish a long rest."
-      ]
-    },
-    {
-      "name": "Armor of Hexes",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "subclassShortName": "Multielemental Hexblade",
-      "subclassSource": "5BBPublic",
-      "level": 10,
-      "entries": [
-        "At 10th level, your hex grows more powerful. If the target cursed by your Hexblade's Curse hits you with an attack roll, you can use your reaction to roll a {@dice d6}. On a 4 or higher, the attack instead misses you, regardless of its roll."
-      ]
-    },
-    {
-      "name": "Master of Hexes",
-      "source": "5BBPublic",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "subclassShortName": "Multielemental Hexblade",
-      "subclassSource": "5BBPublic",
-      "level": 14,
-      "entries": [
-        "Starting at 14th level, you can spread your Hexblade's Curse from a slain creature to another creature. When the creature cursed by your Hexblade's Curse dies, you can apply the curse to a different creature you can see within 30 feet of you, provided you aren't {@condition incapacitated}. When you apply the curse in this way, you don't regain hit points from the death of the previously cursed creature."
-      ]
-    },
-    {
-      "name": "Silencari Assassin",
-      "source": "5BBPublic",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "subclassShortName": "Silencari Assassin",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": [
-        "{@i Practice the Grim Art of Death}",
-        "An Assassin's training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies.",
-        { "type": "refSubclassFeature", "subclassFeature": "Assassinate|Rogue|XPHB|Assassin|XPHB|3|XPHB" },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Silencari Tools|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Get in and Get out|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Keen Weapon Training|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
-        }
-      ]
-    },
-    {
-      "name": "Silencari Tools",
-      "source": "5BBPublic",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "subclassShortName": "Silencari Assassin",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": [
-        "You gain a {@item Disguise Kit|XPHB} and a {@item Poisoner's Kit|XPHB}, and you have proficiency with them.",
-        {
-          "type": "entries",
-          "name": "Bloody Disguise",
-          "entries": [
-            "You also gain 4 empty Viles of Bloody Disguise. You can use your Disguise Kit to extract the appearance and voice from a creature's blood into a Vile of Bloody Disguise. This process takes 10 minutes and is only possible within 12 hours after the creature's death.",
-            "As a {@action Magic|XPHB} action, you can then use a this full Vile of Bloody Disguise to shape-shift and change your appearance and your voice to match the creature's. This doesn't change your game statistics and only works as long as the creature has the same basic arrangement of limbs that you have and is of a size between Medium and Small. This shape-shift doesn't change your clothing and equipment."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Get in and Get out",
-      "source": "5BBPublic",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "subclassShortName": "Silencari Assassin",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": [
-        "When you attack with a melee weapon, your Sneak Attack uses d8 damage dice instead of d6 damage dice."
-      ]
-    },
-    {
-      "name": "Keen Weapon Training",
-      "source": "5BBPublic",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "subclassShortName": "Silencari Assassin",
-      "subclassSource": "5BBPublic",
-      "level": 3,
-      "entries": ["Your weapon attacks score a critical hit on a roll of 19 or 20 on the d20."]
-    },
-    {
-      "name": "Infiltration Expertise",
-      "source": "5BBPublic",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "subclassShortName": "Silencari Assassin",
-      "subclassSource": "5BBPublic",
-      "level": 9,
-      "entries": [
-        { "type": "refSubclassFeature", "subclassFeature": "Infiltration Expertise|Rogue|XPHB|Assassin|XPHB|9|XPHB" }
-      ]
-    },
-    {
-      "name": "Envenom Weapons",
-      "source": "5BBPublic",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "subclassShortName": "Silencari Assassin",
-      "subclassSource": "5BBPublic",
-      "level": 13,
-      "entries": [
-        { "type": "refSubclassFeature", "subclassFeature": "Envenom Weapons|Rogue|XPHB|Assassin|XPHB|13|XPHB" }
-      ]
-    },
-    {
-      "name": "Death Strike",
-      "source": "5BBPublic",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "subclassShortName": "Silencari Assassin",
-      "subclassSource": "5BBPublic",
-      "level": 17,
-      "entries": [{ "type": "refSubclassFeature", "subclassFeature": "Death Strike|Rogue|XPHB|Assassin|XPHB|17|XPHB" }]
     }
   ]
 }

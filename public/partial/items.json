@@ -1,0 +1,145 @@
+{
+  "item": [
+    {
+      "name": "Pump-Action Crossbow",
+      "source": "5BBPublic",
+      "type": "R",
+      "rarity": "none",
+      "weight": 12,
+      "value": 10000,
+      "weaponCategory": "simple",
+      "property": ["A", "LD", "2H"],
+      "mastery": ["Push"],
+      "range": "30/90",
+      "dmg1": "1d10",
+      "dmgType": "P",
+      "ammoType": "bolt"
+    },
+    {
+      "name": "Brandur's Sword Hilt",
+      "source": "5BBPublic",
+      "type": "M",
+      "rarity": "very rare",
+      "reqAttune": true,
+      "weight": 1,
+      "weaponCategory": "martial",
+      "property": ["V"],
+      "dmg1": "1d8",
+      "dmgType": "S",
+      "dmg2": "1d10",
+      "baseItem": "longsword|xphb",
+      "bonusWeapon": "+1",
+      "focus": ["Warlock"],
+      "entries": [
+        "You have a +1 bonus to attack and damage rolls made with this magic weapon.",
+        {
+          "type": "entries",
+          "name": "Broken Sword",
+          "entries": [
+            "This weapon functions as a {@variantrule Spellcasting Focus |XPHB} and a Warlock's pact weapon.",
+            "As a {@variantrule Bonus Action |XPHB}, you can conjure a spectral blade from the hilt to attack with or dismiss it."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Multielementalism",
+          "entries": [
+            "When you hit a creature with this weapon, you can choose to deal one of the following damage types instead of the weapons normal damage: Acid, Cold, Fire, Lightning, or Thunder."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Utak's Warhammer",
+      "source": "5BBPublic",
+      "type": "M",
+      "rarity": "rare",
+      "weight": 5,
+      "weaponCategory": "martial",
+      "property": ["V"],
+      "dmg1": "1d8",
+      "dmgType": "B",
+      "dmg2": "1d10",
+      "baseItem": "warhammer|xphb",
+      "bonusWeapon": "+1",
+      "entries": ["You have a +1 bonus to attack and damage rolls made with this magic weapon."]
+    },
+    {
+      "name": "Silencari Dagger",
+      "source": "5BBPublic",
+      "type": "M",
+      "rarity": "rare",
+      "weight": 1,
+      "weaponCategory": "martial",
+      "property": ["F", "L", "T"],
+      "mastery": ["Sneaky Nick|5BBPublic"],
+      "range": "30/60",
+      "dmg1": "1d6",
+      "dmgType": "P",
+      "bonusWeapon": "+1",
+      "entries": ["You have a +1 bonus to attack and damage rolls made with this magic weapon."]
+    },
+    {
+      "name": "Staff of Enthrallment",
+      "source": "5BBPublic",
+      "type": "M",
+      "rarity": "rare",
+      "weight": 4,
+      "weaponCategory": "simple",
+      "reqAttune": "by a Spellcaster",
+      "property": ["V"],
+      "mastery": ["Topple|XPHB"],
+      "dmg1": "1d6",
+      "dmgType": "B",
+      "dmg2": "1d8",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Mind Controlling",
+          "entries": [
+            "You can cast the {@spell Mind Sliver|XPHB} cantrip from this staff using your spellcasting or pact magic feature."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Enthralling",
+          "entries": [
+            "You can add {@dice 1d4} to any {@skill Persuasion|XPHB} roll you make. On a 4, you can no longer use this feature until you finish a {@variantrule Short Rest|XPHB}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Parrying",
+          "entries": [
+            "When you are hit with a melee attack roll while wielding this staff with two hands, you can take a {@variantrule Reaction|XPHB} to add 2 to your AC for that attack, potentially causing the attack to miss."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Homing Compasses",
+      "source": "5BBPublic",
+      "wondrous": true,
+      "rarity": "uncommon",
+      "entries": [
+        "Homing Compasses come in pairs, with each pointing towards the other one as long as both are on the same plane of existence."
+      ]
+    },
+    {
+      "name": "Bag of Ficklesand",
+      "source": "5BBPublic",
+      "wondrous": true,
+      "rarity": "uncommon",
+      "weight": 2,
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Heavy Sand",
+          "entries": [
+            "While the bag can hear you, you can make a {@skill Performance|XPHB} check (DC 10) as a {@variantrule Bonus Action|XPHB} to convince the bag of sand to increase its weight to 200 lb. or decrease its weight back to 2 lb.."
+          ]
+        }
+      ]
+    }
+  ]
+}

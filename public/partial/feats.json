@@ -1,0 +1,12 @@
+{
+  "feat": [
+    {
+      "name": "Savage Attacker (5BB)",
+      "source": "5BBPublic",
+      "category": "O",
+      "entries": [
+        "When you hit with a weapon, you can reroll any 1 or 2 on a damage die and must use the new roll, even if the new roll is a 1 or a 2."
+      ]
+    }
+  ]
+}

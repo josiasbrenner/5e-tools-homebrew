@@ -1,0 +1,12 @@
+{
+  "itemMastery": [
+    {
+      "name": "Sneaky Nick",
+      "source": "5BBPublic",
+      "entries": [
+        "When you make the extra attack of the Light property, you can make it as part of the {@action Attack|XPHB} action instead of as a {@variantrule Bonus Action|XPHB}. You can make this extra attack only once per turn.",
+        "If you make this extra attack immediately after an attack of the {@action Attack|XPHB} action that you have {@variantrule Advantage|XPHB} on from the {@condition Invisible|XPHB} condition, you can make the attack roll of the extra attack with {@variantrule Advantage|XPHB}."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "subclass": [
+    {
+      "name": "Silencari Assassin",
+      "shortName": "Silencari Assassin",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassFeatures": [
+        "Silencari Assassin|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic",
+        "Infiltration Expertise|Rogue|XPHB|Silencari Assassin|5BBPublic|9|5BBPublic",
+        "Envenom Weapons|Rogue|XPHB|Silencari Assassin|5BBPublic|13|5BBPublic",
+        "Death Strike|Rogue|XPHB|Silencari Assassin|5BBPublic|17|5BBPublic"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Silencari Assassin",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "{@i Practice the Grim Art of Death}",
+        "An Assassin's training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Assassinate|Rogue|XPHB|Assassin|XPHB|3|XPHB"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Silencari Tools|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Get in and Get out|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Keen Weapon Training|Rogue|XPHB|Silencari Assassin|5BBPublic|3|5BBPublic"
+        }
+      ]
+    },
+    {
+      "name": "Silencari Tools",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "You gain a {@item Disguise Kit|XPHB} and a {@item Poisoner's Kit|XPHB}, and you have proficiency with them.",
+        {
+          "type": "entries",
+          "name": "Bloody Disguise",
+          "entries": [
+            "You also gain 4 empty Viles of Bloody Disguise. You can use your Disguise Kit to extract the appearance and voice from a creature's blood into a Vile of Bloody Disguise. This process takes 10 minutes and is only possible within 12 hours after the creature's death.",
+            "As a {@action Magic|XPHB} action, you can then use a this full Vile of Bloody Disguise to shape-shift and change your appearance and your voice to match the creature's. This doesn't change your game statistics and only works as long as the creature has the same basic arrangement of limbs that you have and is of a size between Medium and Small. This shape-shift doesn't change your clothing and equipment."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Get in and Get out",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "When you attack with a melee weapon, your Sneak Attack uses d8 damage dice instead of d6 damage dice."
+      ]
+    },
+    {
+      "name": "Keen Weapon Training",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": ["Your weapon attacks score a critical hit on a roll of 19 or 20 on the d20."]
+    },
+    {
+      "name": "Infiltration Expertise",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 9,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Infiltration Expertise|Rogue|XPHB|Assassin|XPHB|9|XPHB"
+        }
+      ]
+    },
+    {
+      "name": "Envenom Weapons",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 13,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Envenom Weapons|Rogue|XPHB|Assassin|XPHB|13|XPHB"
+        }
+      ]
+    },
+    {
+      "name": "Death Strike",
+      "source": "5BBPublic",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassShortName": "Silencari Assassin",
+      "subclassSource": "5BBPublic",
+      "level": 17,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Death Strike|Rogue|XPHB|Assassin|XPHB|17|XPHB"
+        }
+      ]
+    }
+  ]
+}

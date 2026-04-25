@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "5BBPublic",
+        "abbreviation": "5BB",
+        "full": "5 Banners Burning",
+        "version": "0.1.0",
+        "authors": ["Josias Brenner"],
+        "convertedBy": ["Josias Brenner"],
+        "color": "b8411a"
+      }
+    ],
+    "dateAdded": 1776156420,
+    "dateLastModified": 1777118109,
+    "edition": "one",
+    "status": "wip"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "item": [
+    {
+      "name": "Necklace of Decay",
+      "source": "5BBPrivate",
+      "wondrous": true,
+      "rarity": "artifact",
+      "reqAttune": "by a Spellcaster",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Cantrips",
+          "entries": [
+            "You can cast the {@spell Chill Touch|XPHB} and {@spell Toll the Dead|XPHB} cantrips from this necklace using your spellcasting or pact magic feature."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spells",
+          "entries": [
+            "You always have the {@spell Inflict Wounds|XPHB} and {@spell Aura of Decay|5BBPrivate} spells prepared. You can cast each of these spells once without expending a spell slot and regain the ability to do so when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spells using any spell slots you have of the appropriate level."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "While Unattuned",
+          "entries": [
+            "At initiative count 20 on every round, every creature within 30 ft. of the necklace takes {@damage 1d6} Necrotic damage. Undead and constructs are immune to this damage. This effect passes through total cover, but not through lead. A creature can stop this effect by starting the process of attuning to the necklace."
+          ]
+        }
+      ]
+    }
+  ]
+}

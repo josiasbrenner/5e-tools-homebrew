@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "5BBPrivate",
+        "abbreviation": "5BBPrivate",
+        "full": "5 Banners Burning (Private)",
+        "version": "0.1.0",
+        "authors": ["Josias Brenner"],
+        "convertedBy": ["Josias Brenner"],
+        "color": "b8411a"
+      }
+    ],
+    "dateAdded": 1776156420,
+    "dateLastModified": 1776615637,
+    "edition": "one",
+    "status": "wip"
+  }
+}
