@@ -4,14 +4,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Update Timestamp (5BB Private)",
+      "label": "Build",
       "type": "shell",
-      "command": "sed -E -i '' \"s/(\\\"dateLastModified\\\"[[:space:]]*:[[:space:]]*)[0-9]+/\\1$(date +%s)/\" ./private/5bb-private.json"
-    },
-    {
-      "label": "Update Timestamp (5BB)",
-      "type": "shell",
-      "command": "sed -E -i '' \"s/(\\\"dateLastModified\\\"[[:space:]]*:[[:space:]]*)[0-9]+/\\1$(date +%s)/\" ./public/5bb-public.json"
+      "command": "bun run index.ts"
     }
   ]
 }

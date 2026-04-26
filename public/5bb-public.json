@@ -12,23 +12,13 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1777136605,
+    "dateLastModified": 1777204212,
     "edition": "one",
     "status": "wip"
   },
-  "itemMastery": [
-    {
-      "name": "Sneaky Nick",
-      "source": "5BBPublic",
-      "entries": [
-        "When you make the extra attack of the Light property, you can make it as part of the {@action Attack|XPHB} action instead of as a {@variantrule Bonus Action|XPHB}. You can make this extra attack only once per turn.",
-        "If you make this extra attack immediately after an attack of the {@action Attack|XPHB} action that you have {@variantrule Advantage|XPHB} on from the {@condition Invisible|XPHB} condition, you can make the attack roll of the extra attack with {@variantrule Advantage|XPHB}."
-      ]
-    }
-  ],
   "feat": [
     {
-      "name": "Savage Attacker (5BB)",
+      "name": "Savage Attacker",
       "source": "5BBPublic",
       "category": "O",
       "entries": [
@@ -250,6 +240,294 @@
             }
           ]
         }
+      ]
+    }
+  ],
+  "book": [
+    {
+      "id": "5BB",
+      "source": "5BBPublic",
+      "group": "core",
+      "name": "5 Banners Burning Homebrew",
+      "published": "2026-04-25",
+      "contents": [
+        { "name": "Rules", "ordinal": { "type": "chapter", "identifier": 1 }, "headers": ["Crafting"] },
+        {
+          "name": "Content",
+          "ordinal": { "type": "chapter", "identifier": 2 },
+          "headers": ["Ancestries", "Feats", "Item Masteries", "Classes", "Subclasses", "Spells", "Items"]
+        }
+      ]
+    }
+  ],
+  "bookData": [
+    {
+      "id": "5BB",
+      "source": "5BBPublic",
+      "data": [
+        {
+          "type": "section",
+          "name": "Rules",
+          "entries": [
+            {
+              "type": "section",
+              "name": "Crafting",
+              "entries": [
+                {
+                  "type": "entries",
+                  "name": "Item Costs and Crafting Time",
+                  "entries": [
+                    "The cost of non-magical items varies a lot, but magic items can be categorized by rarity, which gives a general idea of how much they cost and how long they take to craft.",
+                    "Consumables (other then {@item Spell Scroll|XDMG|Spell Scrolls}) cost half as much and take half as long to craft as the values given in the table below.",
+                    {
+                      "type": "table",
+                      "caption": "Magic Item Cost",
+                      "colLabels": ["Item Rarity", "Crafting Time", "Purchase Cost"],
+                      "colStyles": ["col-4", "col-4 text-right", "col-4 text-right"],
+                      "rows": [
+                        ["Common", "5 days", "100 GP"],
+                        ["Uncommon", "10 days", "400 GP"],
+                        ["Rare", "50 days", "4,000 GP"],
+                        ["Very Rare", "125 days", "40,000 GP"],
+                        ["Legendary", "250 days", "200,000 GP"]
+                      ]
+                    },
+                    {
+                      "type": "table",
+                      "caption": "Spell Scroll Cost",
+                      "colLabels": ["Spell Level", "Crafting Time", "Purchase Cost"],
+                      "colStyles": ["col-4 text-center", "col-4 text-center", "col-4 text-right"],
+                      "rows": [
+                        ["{@filter Cantrip|spells|level=0}", "1 day", "30 GP"],
+                        ["{@filter 1|spells|level=1}", "1 day", "50 GP"],
+                        ["{@filter 2|spells|level=2}", "3 days", "200 GP"],
+                        ["{@filter 3|spells|level=3}", "5 days", "300 GP"],
+                        ["{@filter 4|spells|level=4}", "10 days", "2,000 GP"],
+                        ["{@filter 5|spells|level=5}", "25 days", "3,000 GP"],
+                        ["{@filter 6|spells|level=6}", "40 days", "20,000 GP"],
+                        ["{@filter 7|spells|level=7}", "50 days", "25,000 GP"],
+                        ["{@filter 8|spells|level=8}", "60 days", "30,000 GP"],
+                        ["{@filter 9|spells|level=9}", "120 days", "100,000 GP"]
+                      ]
+                    },
+                    "To determine how many days (working 8 hours a day) it takes to make a non-magical item, divide its purchase cost in GP by 10 (round a fraction up to a day)."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Raw Materials",
+                  "entries": [
+                    "To craft an item, you need to collect raw materials worth half the item's purchase cost.",
+                    "If a magic item incorporates another item, buying or crafting that item is not included in the crafting cost."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Crafting Magic Items",
+                  "entries": [
+                    {
+                      "type": "entries",
+                      "name": "Requirements",
+                      "entries": [
+                        "To craft a magic item, you need use an appropriate tool as listed in the Magic Item Tools table. You and any assistants must have proficiency in the {@skill Arcana|XPHB} skill as well as the required tool.",
+                        "If a magic item allows its user to cast any spells from it, you must have all those spells prepared every day you spend crafting the item.",
+                        {
+                          "type": "table",
+                          "caption": "Magic Item Tools",
+                          "colLabels": ["Item Category", "Required Tool"],
+                          "colStyles": ["col-3", "col-9"],
+                          "rows": [
+                            [
+                              "Armor",
+                              "{@item Leatherworker's Tools|XPHB}, {@item Smith's Tools|XPHB}, or {@item Weaver's Tools|XPHB} depending on the kind of armor as noted in the tools' descriptions"
+                            ],
+                            ["Potion", "{@item Alchemist's Supplies|XPHB} or {@item Herbalism Kit|XPHB}"],
+                            ["Ring", "{@item Jeweler's Tools|XPHB}"],
+                            ["Rod", "{@item Woodcarver's Tools|XPHB}"],
+                            ["Scroll", "{@item Calligrapher's Supplies|XPHB}"],
+                            ["Staff", "{@item Woodcarver's Tools|XPHB}"],
+                            ["Wand", "{@item Woodcarver's Tools|XPHB}"],
+                            [
+                              "Weapon",
+                              "{@item Leatherworker's Tools|XPHB}, {@item Smith's Tools|XPHB}, or {@item Woodcarver's Tools|XPHB} depending on the kind of weapon as noted in the tools' descriptions"
+                            ],
+                            [
+                              "Wondrous Item",
+                              "{@item Tinker's Tools|XPHB} or the tool required to make the nonmagical item on which the magic item is based"
+                            ]
+                          ]
+                        },
+                        "To scribe a scroll, you must have proficiency in the {@skill Arcana|XPHB} skill or with {@item Calligrapher's Supplies|XPHB} and have the spell prepared on each day of the inscription. You must also have at hand any Material components required by the spell; if the spell consumes its Material components, they are consumed only when you complete the scroll. The scroll's spell uses your spell save DC and spell attack bonus."
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Harvesting Poison",
+                  "entries": [
+                    "Poisons come in the following four types:",
+                    {
+                      "type": "list",
+                      "style": "list-hang-notitle",
+                      "items": [
+                        {
+                          "type": "item",
+                          "name": "Contact",
+                          "entry": "Contact poison can be smeared on an object and remains potent until it is touched or washed off. A creature that touches contact poison with exposed skin suffers its effects."
+                        },
+                        {
+                          "type": "item",
+                          "name": "Ingested",
+                          "entry": "A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing {@variantrule Advantage|XPHB} on the saving throw or dealing only half as much damage on a failed save."
+                        },
+                        {
+                          "type": "item",
+                          "name": "Inhaled",
+                          "entry": "Poisonous powders and gases take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body."
+                        },
+                        {
+                          "type": "item",
+                          "name": "Injury",
+                          "entry": "Injury poison can be applied as a Bonus Action to a weapon, a piece of ammunition, or similar object. The poison remains potent until delivered through a wound or washed off. A creature that takes Piercing or Slashing damage from an object coated with the poison is exposed to its effects."
+                        }
+                      ]
+                    },
+                    "A character can attempt to harvest poison from a venomous creature that is dead or has the {@condition Incapacitated|XPHB} condition. The effort takes {@dice 1d6} minutes, after which the character makes a {@dc 20} Intelligence ({@skill Nature|XPHB}) check using a {@item Poisoner's Kit|XPHB}. On a successful check, the character harvests enough poison for a single dose, and no additional poison can be harvested from that creature. On a failed check, the character is unable to extract any poison. If the character fails the check by 5 or more, the character is subjected to the creature's poison."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Craftable Magic Items",
+                  "entries": [
+                    "In theory, one you can attempt to craft any magic item. The following selections highlights some items that might be of interest to the party",
+                    {
+                      "type": "entries",
+                      "name": "Enspelled item",
+                      "entries": [
+                        "You can bound a spell into a non-magical item, transforming it into a magical item with 6 charges that regain {@dice 1d6} expended charges daily at dawn. While having the item equipped, the owner can take the {@action Magic|XPHB} Action to expend a charge and cast the spell from the item.",
+                        "The spell uses the spell attack bonus and spell save DC you had when you crafted the item.",
+                        "The rarity of the item is determined by the spell's level. Cantrips and 1st-level spells are {@b Uncommon}, 2nd and 3rd-level spells are {@b Rare}, 4th and 5th-level spells are {@b Very Rare}, and 6th, 7th and 8th-level spells are {@b Legendary}.",
+                        {
+                          "type": "list",
+                          "style": "list-hang-notitle",
+                          "items": [
+                            {
+                              "type": "item",
+                              "name": "{@item Enspelled Armor|XDMG}",
+                              "entry": "It requires Attunement and must have a spell of the {@filter Abjuration or Illusion|spells|school=A;I} school of magic bound into it."
+                            },
+                            {
+                              "type": "item",
+                              "name": "{@item Enspelled Weapon|XDMG}",
+                              "entry": "It requires Attunement and must have a spell of the {@filter Conjuration, Divination, Evocation, Necromancy, or Transmutation|spells|school=C;D;V;N;T} school of magic bound into it."
+                            },
+                            {
+                              "type": "item",
+                              "name": "{@item Enspelled Staff|XDMG}",
+                              "entry": "It requires Attunement by a Spellcaster. It can have a spell of any school of magic bound into it, but if its last charge is expanded, theres a change it looses its magic."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "name": "+X Weapon or Armor",
+                      "entries": [
+                        "You can enchant a non-magical item to grant it a bonus to its statistics",
+                        {
+                          "type": "table",
+                          "caption": "+X Weapon or Armor",
+                          "colLabels": ["Item Type", "Bonus", "Rarity"],
+                          "colStyles": ["col-6 text-left", "col-6 text-center", "col-6 text-center"],
+                          "rows": [
+                            [
+                              "{@item +1 Weapon|XDMG} or 10 pieces of {@item +1 Ammunition|XDMG}",
+                              "+1 to attack roll and damage",
+                              "Uncommon"
+                            ],
+                            ["{@item +1 Shield|XDMG}", "+1 to AC", "Uncommon"],
+                            ["+1 spellcasting focus", "+1 to spell attack rolls and spell save DC", "Uncommon"],
+                            ["{@item +1 Armor|XDMG}", "+1 to AC", "Rare"],
+                            [
+                              "{@item +2 Weapon|XDMG} or 10 pieces of {@item +2 Ammunition|XDMG}",
+                              "+2 to attack roll and damage",
+                              "Rare"
+                            ],
+                            ["{@item +2 Shield|XDMG}", "+2 to AC", "Rare"],
+                            ["+2 spellcasting focus", "+2 to spell attack rolls and spell save DC", "Rare"]
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "name": "Adding {@variantrule weapon mastery properties|XPHB}",
+                      "entries": []
+                    },
+                    {
+                      "type": "entries",
+                      "name": "Rings and Wands",
+                      "entries": [
+                        "You can use {@item Jeweler's Tools|XPHB} to craft {@filter Magical Rings|items|source=xdmg|type=ring} and you can use {@item Woodcarver's Tools|XPHB} to craft {@filter Magical Wands|items|source=xdmg|type=wand}."
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "name": "Potions",
+                      "entries": [
+                        "You can use {@item Alchemist's Supplies|XPHB} or {@item Herbalism Kit|XPHB} to craft {@filter Magical Potions|items|source=xdmg|type=potion}."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Content",
+          "entries": [
+            { "type": "entries", "name": "Ancestries", "entries": ["{@race Dragonborn (Aasimar)|5BBPublic}"] },
+            { "type": "entries", "name": "Feats", "entries": ["{@feat Savage Attacker|5BBPublic}"] },
+            { "type": "entries", "name": "Item Masteries", "entries": ["{@itemMastery Sneaky Nick|5BBPublic}"] },
+            { "type": "entries", "name": "Classes", "entries": ["{@class Shapeshifter|5BBPublic}"] },
+            {
+              "type": "entries",
+              "name": "Subclasses",
+              "entries": [
+                "{@subclass Silencari Assassin|Rogue|XPHB|5BBPublic}",
+                "{@subclass Multielemental Hexblade|Warlock|XPHB|5BBPublic}"
+              ]
+            },
+            { "type": "section", "name": "Spells", "entries": [] },
+            {
+              "type": "section",
+              "name": "Items",
+              "entries": [
+                "{@item Bag of Ficklesand|5BBPublic}",
+                "{@item Brandur's Sword Hilt|5BBPublic}",
+                "{@item Homing Compasses|5BBPublic}",
+                "{@item Pump-Action Crossbow|5BBPublic}",
+                "{@item Silencari Dagger|5BBPublic}",
+                "{@item Staff of Enthrallment|5BBPublic}",
+                "{@item Utak's Warhammer|5BBPublic}"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "itemMastery": [
+    {
+      "name": "Sneaky Nick",
+      "source": "5BBPublic",
+      "entries": [
+        "When you make the extra attack of the Light property, you can make it as part of the {@action Attack|XPHB} action instead of as a {@variantrule Bonus Action|XPHB}. You can make this extra attack only once per turn.",
+        "If you make this extra attack immediately after an attack of the {@action Attack|XPHB} action that you have {@variantrule Advantage|XPHB} on from the {@condition Invisible|XPHB} condition, you can make the attack roll of the extra attack with {@variantrule Advantage|XPHB}."
       ]
     }
   ],
