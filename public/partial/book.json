@@ -164,8 +164,8 @@
                         }
                       ]
                     },
-                    "A character can attempt to harvest poison from a venomous creature that is dead or has the {@condition Incapacitated|XPHB} condition. The effort takes {@dice 1d6} minutes, after which the character makes a {@dc 20} Intelligence ({@skill Nature|XPHB}) check using a {@item Poisoner's Kit|XPHB}. On a successful check, the character harvests enough poison for a single dose, and no additional poison can be harvested from that creature. On a failed check, the character is unable to extract any poison. If the character fails the check by 5 or more, the character is subjected to the creature's poison.",
-                    "A creature that can shape shift can be harvested from once per transformation, but one transformation option cannot be harvested from more than twice."
+                    "A character can attempt to harvest poison from a venomous creature that is dead or has the {@condition Incapacitated|XPHB} condition. The effort takes {@dice 1d6} minutes, after which the character makes a {@dc 20} Intelligence ({@skill Nature|XPHB}) check using a {@item Poisoner's Kit|XPHB}. On a successful check, the character harvests enough poison for a single dose. On a failed check, the character is unable to extract any poison. If the character fails the check by 5 or more, the character is subjected to the creature's poison.",
+                    "In any case, the creature looses its poisonous features and can not be harvested from again. A creature that can shape shift can be harvested from once per transformation, but one transformation option cannot be harvested from more than once."
                   ]
                 },
                 {

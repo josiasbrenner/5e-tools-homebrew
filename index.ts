@@ -44,7 +44,7 @@ const APPENDIX_MAP: Record<string, { key: string; tag: (e: AnyEntry) => string }
   },
   Spells: { key: "spell", tag: (e) => `{@spell ${e.name}|${e.source}}` },
   Items: { key: "item", tag: (e) => `{@item ${e.name}|${e.source}}` },
-  "Shapeshifter Forms": { key: "monster", tag: (e) => `{@monster ${e.name}|${e.source}}` },
+  "Shapeshifter Forms": { key: "monster", tag: (e) => `{@creature ${e.name}|${e.source}}` },
 };
 
 function generateAppendix(merged: Record<string, unknown>): void {
