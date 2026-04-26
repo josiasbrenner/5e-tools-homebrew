@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1777212102,
+    "dateLastModified": 1777218252,
     "edition": "one",
     "status": "wip"
   },
@@ -293,36 +293,41 @@
                     "Consumables (other then {@item Spell Scroll|XDMG|Spell Scrolls}) cost half as much and take half as long to craft as the values given in the table below.",
                     {
                       "type": "table",
-                      "caption": "Magic Item Cost",
+                      "caption": "Magic Item Value and Crafting Time",
                       "colLabels": ["Item Rarity", "Crafting Time", "Purchase Cost"],
-                      "colStyles": ["col-4", "col-4 text-right", "col-4 text-right"],
+                      "colStyles": ["col-4 text-center", "col-4 text-center", "col-4 text-center"],
                       "rows": [
-                        ["Common", "5 days", "100 GP"],
-                        ["Uncommon", "10 days", "400 GP"],
-                        ["Rare", "50 days", "4,000 GP"],
-                        ["Very Rare", "125 days", "40,000 GP"],
-                        ["Legendary", "250 days", "200,000 GP"]
+                        ["Common", "20 h", "100 GP"],
+                        ["Uncommon", "40 h", "400 GP"],
+                        ["Rare", "200 h", "4,000 GP"],
+                        ["Very Rare", "500 h", "40,000 GP"],
+                        ["Legendary", "2,500 h", "200,000 GP"]
                       ]
                     },
                     {
                       "type": "table",
-                      "caption": "Spell Scroll Cost",
-                      "colLabels": ["Spell Level", "Crafting Time", "Purchase Cost"],
-                      "colStyles": ["col-4 text-center", "col-4 text-center", "col-4 text-right"],
+                      "caption": "Spell Scroll Value and Enspelled Item Rarity",
+                      "colLabels": [
+                        "Spell Level",
+                        "Scroll Crafting Time",
+                        "Scroll Purchase Cost",
+                        "Enspelled Item Rarity"
+                      ],
+                      "colStyles": ["col-3 text-center", "col-3 text-center", "col-3 text-center", "col-3 text-center"],
                       "rows": [
-                        ["{@filter Cantrip|spells|level=0}", "1 day", "30 GP"],
-                        ["{@filter 1|spells|level=1}", "1 day", "50 GP"],
-                        ["{@filter 2|spells|level=2}", "3 days", "200 GP"],
-                        ["{@filter 3|spells|level=3}", "5 days", "300 GP"],
-                        ["{@filter 4|spells|level=4}", "10 days", "2,000 GP"],
-                        ["{@filter 5|spells|level=5}", "25 days", "3,000 GP"],
-                        ["{@filter 6|spells|level=6}", "40 days", "20,000 GP"],
-                        ["{@filter 7|spells|level=7}", "50 days", "25,000 GP"],
-                        ["{@filter 8|spells|level=8}", "60 days", "30,000 GP"],
-                        ["{@filter 9|spells|level=9}", "120 days", "100,000 GP"]
+                        ["{@filter Cantrip|spells|level=0}", "2 h", "30 GP", "Uncommon"],
+                        ["{@filter 1|spells|level=1}", "4 h", "50 GP", "Uncommon"],
+                        ["{@filter 2|spells|level=2}", "12 h", "200 GP", "Rare"],
+                        ["{@filter 3|spells|level=3}", "20 h", "300 GP", "Rare"],
+                        ["{@filter 4|spells|level=4}", "40 h", "2,000 GP", "Very Rare"],
+                        ["{@filter 5|spells|level=5}", "100 h", "3,000 GP", "Very Rare"],
+                        ["{@filter 6|spells|level=6}", "160 h", "20,000 GP", "Legendary"],
+                        ["{@filter 7|spells|level=7}", "200 h", "25,000 GP", "Legendary"],
+                        ["{@filter 8|spells|level=8}", "240 h", "30,000 GP", "Legendary"],
+                        ["{@filter 9|spells|level=9}", "480 h", "100,000 GP", ""]
                       ]
                     },
-                    "To determine how many days (working 8 hours a day) it takes to make a non-magical item, divide its purchase cost in GP by 10 (round a fraction up to a day)."
+                    "To determine how many hours it takes to make a non-magical item, divide its purchase cost in GP by 5."
                   ]
                 },
                 {
@@ -405,7 +410,8 @@
                         }
                       ]
                     },
-                    "A character can attempt to harvest poison from a venomous creature that is dead or has the {@condition Incapacitated|XPHB} condition. The effort takes {@dice 1d6} minutes, after which the character makes a {@dc 20} Intelligence ({@skill Nature|XPHB}) check using a {@item Poisoner's Kit|XPHB}. On a successful check, the character harvests enough poison for a single dose, and no additional poison can be harvested from that creature. On a failed check, the character is unable to extract any poison. If the character fails the check by 5 or more, the character is subjected to the creature's poison."
+                    "A character can attempt to harvest poison from a venomous creature that is dead or has the {@condition Incapacitated|XPHB} condition. The effort takes {@dice 1d6} minutes, after which the character makes a {@dc 20} Intelligence ({@skill Nature|XPHB}) check using a {@item Poisoner's Kit|XPHB}. On a successful check, the character harvests enough poison for a single dose, and no additional poison can be harvested from that creature. On a failed check, the character is unable to extract any poison. If the character fails the check by 5 or more, the character is subjected to the creature's poison.",
+                    "A creature that can shape shift can be harvested from once per transformation, but one transformation option cannot be harvested from more than twice."
                   ]
                 },
                 {
