@@ -31,12 +31,10 @@
       "bonusWeapon": "+1",
       "focus": ["Warlock"],
       "entries": [
-        "You have a +1 bonus to attack and damage rolls made with this magic weapon.",
         {
           "type": "entries",
           "name": "Broken Sword",
           "entries": [
-            "This weapon functions as a {@variantrule Spellcasting Focus |XPHB} and a Warlock's pact weapon.",
             "As a {@variantrule Bonus Action |XPHB}, you can conjure a spectral blade from the hilt to attack with or dismiss it."
           ]
         },
@@ -44,7 +42,21 @@
           "type": "entries",
           "name": "Multielementalism",
           "entries": [
-            "When you hit a creature with this weapon, you can choose to deal one of the following damage types instead of the weapons normal damage: Acid, Cold, Fire, Lightning, or Thunder."
+            "When you hit a creature with this weapon, you can choose to deal one of the following damage types instead of the weapons normal damage: Acid, Cold, Fire, Lightning, or Thunder. You can not use the {@optfeature Pact of the Blade|XPHB} Eldritch Invocation to deal Necrotic, Psychic or Radiant damage with this weapon."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Mutable Weapon",
+          "entries": [
+            "You can use the {@book Crafting|5BB} rules to improve this weapon, even though it is a magic weapon. You can have up to 3 improvements on this weapon at a time, those improvements must be appropriate for a weapon of its type and the {@item +1 Weapon|XDMG|+1}, {@item +2 Weapon|XDMG|+2} and {@item +3 Weapon|XDMG|+3} improvements don't stack.",
+            "The current improvements on this weapon are:",
+            {
+              "type": "list",
+              "items": [
+                "{@item +1 Weapon|XDMG}: You have a +1 bonus to attack and damage rolls made with this magic weapon."
+              ]
+            }
           ]
         }
       ]

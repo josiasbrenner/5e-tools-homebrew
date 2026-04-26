@@ -8,7 +8,7 @@
       "published": "2026-04-25",
       "contents": [
         {
-          "name": "Rules",
+          "name": "Homebrew-Rules",
           "ordinal": {
             "type": "chapter",
             "identifier": 1
@@ -16,10 +16,10 @@
           "headers": ["Crafting"]
         },
         {
-          "name": "Content",
+          "name": "Appendix",
           "ordinal": {
-            "type": "chapter",
-            "identifier": 2
+            "type": "appendix",
+            "identifier": 1
           },
           "headers": ["Ancestries", "Feats", "Item Masteries", "Classes", "Subclasses", "Spells", "Items"]
         }
@@ -33,7 +33,7 @@
       "data": [
         {
           "type": "section",
-          "name": "Rules",
+          "name": "Homebrew-Rules",
           "entries": [
             {
               "type": "section",
@@ -199,30 +199,45 @@
                     },
                     {
                       "type": "entries",
-                      "name": "+X Weapon or Armor",
+                      "name": "Improved Weapon or Armor",
                       "entries": [
-                        "You can enchant a non-magical item to grant it a bonus to its statistics",
+                        "You can enchant a non-magical item to grant it a bonus to its statistics or a special effect",
                         {
                           "type": "table",
-                          "caption": "+X Weapon or Armor",
-                          "colLabels": ["Item Type", "Bonus", "Rarity"],
-                          "colStyles": ["col-6 text-left", "col-6 text-center", "col-6 text-center"],
+                          "caption": "Improved Weapon or Armor",
+                          "colLabels": ["Item Type", "Bonus (Highlight)", "Rarity", "Attunement"],
+                          "colStyles": [
+                            "col-6 text-left",
+                            "col-6 text-center",
+                            "col-6 text-center",
+                            "col-6 text-center"
+                          ],
                           "rows": [
                             [
                               "{@item +1 Weapon|XDMG} or 10 pieces of {@item +1 Ammunition|XDMG}",
                               "+1 to attack roll and damage",
-                              "Uncommon"
+                              "Uncommon",
+                              ""
                             ],
-                            ["{@item +1 Shield|XDMG}", "+1 to AC", "Uncommon"],
-                            ["+1 spellcasting focus", "+1 to spell attack rolls and spell save DC", "Uncommon"],
-                            ["{@item +1 Armor|XDMG}", "+1 to AC", "Rare"],
+                            ["{@item +1 Shield|XDMG}", "+1 to AC", "Uncommon", ""],
+                            ["+1 spellcasting focus", "+1 to spell attack rolls and spell save DC", "Uncommon", "Yes"],
+                            [
+                              "{@item Weapon of Warning|XDMG}",
+                              "Advantage on Initiative rolls for all",
+                              "Uncommon",
+                              "Yes"
+                            ],
+                            ["{@item +1 Armor|XDMG}", "+1 to AC", "Rare", ""],
                             [
                               "{@item +2 Weapon|XDMG} or 10 pieces of {@item +2 Ammunition|XDMG}",
                               "+2 to attack roll and damage",
-                              "Rare"
+                              "Rare",
+                              ""
                             ],
-                            ["{@item +2 Shield|XDMG}", "+2 to AC", "Rare"],
-                            ["+2 spellcasting focus", "+2 to spell attack rolls and spell save DC", "Rare"]
+                            ["{@item +2 Shield|XDMG}", "+2 to AC", "Rare", ""],
+                            ["+2 spellcasting focus", "+2 to spell attack rolls and spell save DC", "Rare", "Yes"],
+                            ["{@item Armor of Resistance|XDMG}", "Resistance to a specific damage type", "Rare", "Yes"],
+                            ["{@item Flame Tongue|XDMG}", "+2d6 Fire damage", "Rare", "Yes"]
                           ]
                         }
                       ]
@@ -254,53 +269,47 @@
         },
         {
           "type": "section",
-          "name": "Content",
+          "name": "Appendix",
           "entries": [
             {
               "type": "entries",
               "name": "Ancestries",
-              "entries": ["{@race Dragonborn (Aasimar)|5BBPublic}"]
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
             },
             {
               "type": "entries",
               "name": "Feats",
-              "entries": ["{@feat Savage Attacker|5BBPublic}"]
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
             },
             {
               "type": "entries",
               "name": "Item Masteries",
-              "entries": ["{@itemMastery Sneaky Nick|5BBPublic}"]
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
             },
             {
               "type": "entries",
               "name": "Classes",
-              "entries": ["{@class Shapeshifter|5BBPublic}"]
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
             },
             {
               "type": "entries",
               "name": "Subclasses",
-              "entries": [
-                "{@subclass Silencari Assassin|Rogue|XPHB|5BBPublic}",
-                "{@subclass Multielemental Hexblade|Warlock|XPHB|5BBPublic}"
-              ]
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
             },
             {
-              "type": "section",
+              "type": "entries",
               "name": "Spells",
-              "entries": []
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
             },
             {
-              "type": "section",
+              "type": "entries",
               "name": "Items",
-              "entries": [
-                "{@item Bag of Ficklesand|5BBPublic}",
-                "{@item Brandur's Sword Hilt|5BBPublic}",
-                "{@item Homing Compasses|5BBPublic}",
-                "{@item Pump-Action Crossbow|5BBPublic}",
-                "{@item Silencari Dagger|5BBPublic}",
-                "{@item Staff of Enthrallment|5BBPublic}",
-                "{@item Utak's Warhammer|5BBPublic}"
-              ]
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
+            },
+            {
+              "type": "entries",
+              "name": "Shapeshifter Forms",
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
             }
           ]
         }

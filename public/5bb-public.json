@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1777204212,
+    "dateLastModified": 1777212102,
     "edition": "one",
     "status": "wip"
   },
@@ -58,12 +58,10 @@
       "bonusWeapon": "+1",
       "focus": ["Warlock"],
       "entries": [
-        "You have a +1 bonus to attack and damage rolls made with this magic weapon.",
         {
           "type": "entries",
           "name": "Broken Sword",
           "entries": [
-            "This weapon functions as a {@variantrule Spellcasting Focus |XPHB} and a Warlock's pact weapon.",
             "As a {@variantrule Bonus Action |XPHB}, you can conjure a spectral blade from the hilt to attack with or dismiss it."
           ]
         },
@@ -71,7 +69,21 @@
           "type": "entries",
           "name": "Multielementalism",
           "entries": [
-            "When you hit a creature with this weapon, you can choose to deal one of the following damage types instead of the weapons normal damage: Acid, Cold, Fire, Lightning, or Thunder."
+            "When you hit a creature with this weapon, you can choose to deal one of the following damage types instead of the weapons normal damage: Acid, Cold, Fire, Lightning, or Thunder. You can not use the {@optfeature Pact of the Blade|XPHB} Eldritch Invocation to deal Necrotic, Psychic or Radiant damage with this weapon."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Mutable Weapon",
+          "entries": [
+            "You can use the {@book Crafting|5BB} rules to improve this weapon, even though it is a magic weapon. You can have up to 3 improvements on this weapon at a time, those improvements must be appropriate for a weapon of its type and the {@item +1 Weapon|XDMG|+1}, {@item +2 Weapon|XDMG|+2} and {@item +3 Weapon|XDMG|+3} improvements don't stack.",
+            "The current improvements on this weapon are:",
+            {
+              "type": "list",
+              "items": [
+                "{@item +1 Weapon|XDMG}: You have a +1 bonus to attack and damage rolls made with this magic weapon."
+              ]
+            }
           ]
         }
       ]
@@ -251,11 +263,11 @@
       "name": "5 Banners Burning Homebrew",
       "published": "2026-04-25",
       "contents": [
-        { "name": "Rules", "ordinal": { "type": "chapter", "identifier": 1 }, "headers": ["Crafting"] },
+        { "name": "Homebrew-Rules", "ordinal": { "type": "chapter", "identifier": 1 }, "headers": ["Crafting"] },
         {
-          "name": "Content",
-          "ordinal": { "type": "chapter", "identifier": 2 },
-          "headers": ["Ancestries", "Feats", "Item Masteries", "Classes", "Subclasses", "Spells", "Items"]
+          "name": "Appendix",
+          "ordinal": { "type": "appendix", "identifier": 1 },
+          "headers": ["Ancestries", "Feats", "Item Masteries", "Classes", "Subclasses", "Items"]
         }
       ]
     }
@@ -267,7 +279,7 @@
       "data": [
         {
           "type": "section",
-          "name": "Rules",
+          "name": "Homebrew-Rules",
           "entries": [
             {
               "type": "section",
@@ -433,30 +445,45 @@
                     },
                     {
                       "type": "entries",
-                      "name": "+X Weapon or Armor",
+                      "name": "Improved Weapon or Armor",
                       "entries": [
-                        "You can enchant a non-magical item to grant it a bonus to its statistics",
+                        "You can enchant a non-magical item to grant it a bonus to its statistics or a special effect",
                         {
                           "type": "table",
-                          "caption": "+X Weapon or Armor",
-                          "colLabels": ["Item Type", "Bonus", "Rarity"],
-                          "colStyles": ["col-6 text-left", "col-6 text-center", "col-6 text-center"],
+                          "caption": "Improved Weapon or Armor",
+                          "colLabels": ["Item Type", "Bonus (Highlight)", "Rarity", "Attunement"],
+                          "colStyles": [
+                            "col-6 text-left",
+                            "col-6 text-center",
+                            "col-6 text-center",
+                            "col-6 text-center"
+                          ],
                           "rows": [
                             [
                               "{@item +1 Weapon|XDMG} or 10 pieces of {@item +1 Ammunition|XDMG}",
                               "+1 to attack roll and damage",
-                              "Uncommon"
+                              "Uncommon",
+                              ""
                             ],
-                            ["{@item +1 Shield|XDMG}", "+1 to AC", "Uncommon"],
-                            ["+1 spellcasting focus", "+1 to spell attack rolls and spell save DC", "Uncommon"],
-                            ["{@item +1 Armor|XDMG}", "+1 to AC", "Rare"],
+                            ["{@item +1 Shield|XDMG}", "+1 to AC", "Uncommon", ""],
+                            ["+1 spellcasting focus", "+1 to spell attack rolls and spell save DC", "Uncommon", "Yes"],
+                            [
+                              "{@item Weapon of Warning|XDMG}",
+                              "Advantage on Initiative rolls for all",
+                              "Uncommon",
+                              "Yes"
+                            ],
+                            ["{@item +1 Armor|XDMG}", "+1 to AC", "Rare", ""],
                             [
                               "{@item +2 Weapon|XDMG} or 10 pieces of {@item +2 Ammunition|XDMG}",
                               "+2 to attack roll and damage",
-                              "Rare"
+                              "Rare",
+                              ""
                             ],
-                            ["{@item +2 Shield|XDMG}", "+2 to AC", "Rare"],
-                            ["+2 spellcasting focus", "+2 to spell attack rolls and spell save DC", "Rare"]
+                            ["{@item +2 Shield|XDMG}", "+2 to AC", "Rare", ""],
+                            ["+2 spellcasting focus", "+2 to spell attack rolls and spell save DC", "Rare", "Yes"],
+                            ["{@item Armor of Resistance|XDMG}", "Resistance to a specific damage type", "Rare", "Yes"],
+                            ["{@item Flame Tongue|XDMG}", "+2d6 Fire damage", "Rare", "Yes"]
                           ]
                         }
                       ]
@@ -488,33 +515,66 @@
         },
         {
           "type": "section",
-          "name": "Content",
+          "name": "Appendix",
           "entries": [
-            { "type": "entries", "name": "Ancestries", "entries": ["{@race Dragonborn (Aasimar)|5BBPublic}"] },
-            { "type": "entries", "name": "Feats", "entries": ["{@feat Savage Attacker|5BBPublic}"] },
-            { "type": "entries", "name": "Item Masteries", "entries": ["{@itemMastery Sneaky Nick|5BBPublic}"] },
-            { "type": "entries", "name": "Classes", "entries": ["{@class Shapeshifter|5BBPublic}"] },
+            {
+              "type": "entries",
+              "name": "Ancestries",
+              "entries": [{ "type": "list", "columns": 3, "items": ["{@race Dragonborn (Aasimar)|5BBPublic}"] }]
+            },
+            {
+              "type": "entries",
+              "name": "Feats",
+              "entries": [{ "type": "list", "columns": 3, "items": ["{@feat Savage Attacker|5BBPublic}"] }]
+            },
+            {
+              "type": "entries",
+              "name": "Item Masteries",
+              "entries": [{ "type": "list", "columns": 3, "items": ["{@itemMastery Sneaky Nick|5BBPublic}"] }]
+            },
+            {
+              "type": "entries",
+              "name": "Classes",
+              "entries": [{ "type": "list", "columns": 3, "items": ["{@class Shapeshifter|5BBPublic}"] }]
+            },
             {
               "type": "entries",
               "name": "Subclasses",
               "entries": [
-                "{@subclass Silencari Assassin|Rogue|XPHB|5BBPublic}",
-                "{@subclass Multielemental Hexblade|Warlock|XPHB|5BBPublic}"
+                {
+                  "type": "list",
+                  "columns": 3,
+                  "items": [
+                    "{@subclass Multielemental Hexblade|Warlock|XPHB|5BBPublic}",
+                    "{@subclass Silencari Assassin|Rogue|XPHB|5BBPublic}"
+                  ]
+                }
               ]
             },
-            { "type": "section", "name": "Spells", "entries": [] },
+            { "type": "entries", "name": "Spells", "entries": [{ "type": "list", "columns": 3, "items": [] }] },
             {
-              "type": "section",
+              "type": "entries",
               "name": "Items",
               "entries": [
-                "{@item Bag of Ficklesand|5BBPublic}",
-                "{@item Brandur's Sword Hilt|5BBPublic}",
-                "{@item Homing Compasses|5BBPublic}",
-                "{@item Pump-Action Crossbow|5BBPublic}",
-                "{@item Silencari Dagger|5BBPublic}",
-                "{@item Staff of Enthrallment|5BBPublic}",
-                "{@item Utak's Warhammer|5BBPublic}"
+                {
+                  "type": "list",
+                  "columns": 3,
+                  "items": [
+                    "{@item Bag of Ficklesand|5BBPublic}",
+                    "{@item Brandur's Sword Hilt|5BBPublic}",
+                    "{@item Homing Compasses|5BBPublic}",
+                    "{@item Pump-Action Crossbow|5BBPublic}",
+                    "{@item Silencari Dagger|5BBPublic}",
+                    "{@item Staff of Enthrallment|5BBPublic}",
+                    "{@item Utak's Warhammer|5BBPublic}"
+                  ]
+                }
               ]
+            },
+            {
+              "type": "entries",
+              "name": "Shapeshifter Forms",
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
             }
           ]
         }
