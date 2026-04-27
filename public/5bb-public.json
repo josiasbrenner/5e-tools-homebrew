@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1777320795,
+    "dateLastModified": 1777323739,
     "edition": "one",
     "status": "wip"
   },
@@ -76,7 +76,7 @@
           "type": "entries",
           "name": "Mutable Weapon",
           "entries": [
-            "You can use the {@book Crafting|5BB} rules to improve this weapon, even though it is a magic weapon. You can have up to 3 improvements on this weapon at a time, those improvements must be appropriate for a weapon of its type and the {@item +1 Weapon|XDMG|+1}, {@item +2 Weapon|XDMG|+2} and {@item +3 Weapon|XDMG|+3} improvements don't stack.",
+            "You can use the {@book Crafting|5BB} rules to improve this weapon, even though it is a magic weapon. You can have up to 3 improvements on this weapon at a time, those improvements must be appropriate for a weapon of its type and each of attack roll, weapon damage, spell attack roll and saving throw DC can benefit from only one +X improvement at a time.",
             "The current improvements on this weapon are:",
             {
               "type": "list",
