@@ -8,54 +8,54 @@
       "colLabels": ["{@dice 1d100}", "Effect"],
       "colStyles": ["col-1 text-center", "col-11"],
       "rows": [
-        ["01–14", "The marble explodes, dealing {@damage 1d8} piercing damage."],
+        ["01–24", "The marble explodes, dealing {@damage 1d8} piercing damage."],
         [
-          "15-19",
+          "25-34",
           "The marble bursts open, coating the target in faerie dust. For one minute, sheds {@variantrule Dim Light|XPHB} in a 10-foot radius, can't benefit from the {@condition Invisible|XPHB} condition and {@action Attack|XPHB} rolls against it have {@variantrule Advantage|XPHB}."
         ],
-        ["20-24", "The target is {@condition Charmed|XPHB} by you for 1 minute or until the target takes any damage."],
-        ["25-29", "The target is {@condition Frightened|XPHB} of you until the start of your next turn."],
-        ["30-34", "The target has {@variantrule Disadvantage|XPHB} on its next saving throws within the next minute."],
-        ["35-39", "You and the target swap places."],
-        ["40-44", "The target turns {@condition Invisible|XPHB} until the start of your next turn."],
+        ["35-39", "The target is {@condition Charmed|XPHB} by you for 1 minute or until the target takes any damage."],
+        ["40-44", "The target is {@condition Frightened|XPHB} of you until the start of your next turn."],
+        ["45-49", "The target has {@variantrule Disadvantage|XPHB} on its next saving throws within the next minute."],
+        ["50-53", "You and the target swap places."],
+        ["54-56", "The target turns {@condition Invisible|XPHB} until the start of your next turn."],
         [
-          "45-49",
+          "57-59",
           "A 15-foot Cube around the target is filled with magical Darkness, which lasts until the start of your next turn."
         ],
         [
-          "50-54",
+          "60-62",
           "The target is {@condition Restrained|XPHB} for 1 minute. The target can attempt a Strength saving throw at the end of each of its turns, ending the effect on itself on a success."
         ],
-        ["55-59", "The target is healed for {@dice 2d8} Hit Points."],
-        ["60-64", "The target is Reduced for 1 minute. See the {@spell Enlarge/Reduce|XPHB} spell for more details."],
-        ["65-69", "The target is Enlarged for 1 minute. See the {@spell Enlarge/Reduce|XPHB} spell for more details."],
+        ["63-65", "The target is healed for {@dice 2d8} Hit Points."],
+        ["66-68", "The target is Reduced for 1 minute. See the {@spell Enlarge/Reduce|XPHB} spell for more details."],
+        ["69-71", "The target is Enlarged for 1 minute. See the {@spell Enlarge/Reduce|XPHB} spell for more details."],
         [
-          "70-72",
+          "72-74",
           "The target sprouts insectile wings and gains a {@variantrule Flying Speed|XPHB} of 30 feet for 1 minute."
         ],
-        ["73-75", "The target is transported to the Astral Plane until the start of your next turn."],
+        ["75-77", "The target is transported to the Astral Plane until the start of your next turn."],
         [
-          "76-78",
+          "78-80",
           "The target needs to succeed on a Constitution saving throw or be {@condition Paralyzed|XPHB} for 1 minute. The target can attempt a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success."
         ],
         [
-          "79-80",
+          "81-82",
           "The target has {@variantrule Vulnerability|XPHB} to Radiant damage until the start of your next turn."
         ],
-        ["81-82", "The target has {@variantrule Vulnerability|XPHB} to Cold damage until the start of your next turn."],
+        ["83-84", "The target has {@variantrule Vulnerability|XPHB} to Cold damage until the start of your next turn."],
         [
-          "83-84",
+          "85-86",
           "The target has {@variantrule Vulnerability|XPHB} to Lightning damage until the start of your next turn."
         ],
         [
-          "85-86",
+          "87-88",
           "The target has {@variantrule Vulnerability|XPHB} to Poison damage until the start of your next turn."
         ],
         [
-          "87-89",
+          "89-90",
           "The target takes {@damage 2d8} Psychic damage and is {@condition Stunned|XPHB} until the start of your next turn."
         ],
-        ["90-92", "The target takes {@damage 6d6} Force damage"],
+        ["91-92", "The target takes {@damage 6d6} Force damage"],
         [
           "93-94",
           "The target must succeed on a Wisdom saving throw or be under the effect of the {@spell Confusion|XPHB} spell for 1 minute. The target can attempt a Wisdom saving throw at the end of each of its turns, ending the effect on itself on a success."
