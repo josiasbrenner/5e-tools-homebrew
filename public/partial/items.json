@@ -69,6 +69,7 @@
       "weight": 5,
       "weaponCategory": "martial",
       "property": ["V"],
+      "mastery": ["Push|XPHB"],
       "dmg1": "1d8",
       "dmgType": "B",
       "dmg2": "1d10",
