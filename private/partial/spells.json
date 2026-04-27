@@ -34,7 +34,7 @@
         }
       ],
       "entries": [
-        "Life-decaying energy radiates from you in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. Whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters a creature's space and whenever a creature enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, the creature must make a Constitution saving throw. On a failed save, the creature takes {@damage 3d6} Necrotic damage. On a successful save, the creature takes half as much damage. A creature makes this save only once per turn.",
+        "Life-decaying energy radiates from you in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. Whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters a creature's space and whenever a creature enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, the creature must make a Constitution saving throw. On a failed save, the creature takes {@damage 3d6} Necrotic damage. On a successful save, the creature takes half as much damage. A creature makes this save only once per turn. This effect passes through total cover, but not through lead.",
         "Undead and constructs are immune to this spell."
       ],
       "entriesHigherLevel": [
