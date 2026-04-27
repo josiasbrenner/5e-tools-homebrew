@@ -33,7 +33,7 @@ function mergeInto(target: Record<string, unknown>, source: Record<string, unkno
 
 type AnyEntry = Record<string, unknown>;
 
-const APPENDIX_MAP: Record<string, { key: string; tag: (e: AnyEntry) => string }> = {
+const APPENDIX_MAP: Record<string, { key: string; tag: (e: AnyEntry) => string; filter?: (e: AnyEntry) => boolean }> = {
   Ancestries: { key: "race", tag: (e) => `{@race ${e.name}|${e.source}}` },
   Feats: { key: "feat", tag: (e) => `{@feat ${e.name}|${e.source}}` },
   "Item Masteries": { key: "itemMastery", tag: (e) => `{@itemMastery ${e.name}|${e.source}}` },
@@ -44,7 +44,12 @@ const APPENDIX_MAP: Record<string, { key: string; tag: (e: AnyEntry) => string }
   },
   Spells: { key: "spell", tag: (e) => `{@spell ${e.name}|${e.source}}` },
   Items: { key: "item", tag: (e) => `{@item ${e.name}|${e.source}}` },
-  "Shapeshifter Forms": { key: "monster", tag: (e) => `{@creature ${e.name}|${e.source}}` },
+  Bestiary: { key: "monster", tag: (e) => `{@creature ${e.name}|${e.source}}`, filter: (e) => !("original" in e) },
+  "Shapeshifter Forms": {
+    key: "monster",
+    tag: (e) => `{@creature ${e.name}|${e.source}}`,
+    filter: (e) => "original" in e,
+  },
 };
 
 function generateAppendix(merged: Record<string, unknown>): void {
@@ -70,7 +75,8 @@ function generateAppendix(merged: Record<string, unknown>): void {
       if (!mapping) continue;
 
       const dataArr = (merged[mapping.key] as AnyEntry[] | undefined) ?? [];
-      const items = dataArr.map(mapping.tag).sort();
+      const filtered = mapping.filter ? dataArr.filter(mapping.filter) : dataArr;
+      const items = filtered.map(mapping.tag).sort();
 
       const listEntries = entry["entries"] as AnyEntry[] | undefined;
       const listEntry = listEntries?.find((e) => e["type"] === "list");

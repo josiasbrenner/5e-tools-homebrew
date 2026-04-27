@@ -21,7 +21,17 @@
             "type": "appendix",
             "identifier": 1
           },
-          "headers": ["Ancestries", "Feats", "Item Masteries", "Classes", "Subclasses", "Spells", "Items"]
+          "headers": [
+            "Ancestries",
+            "Feats",
+            "Item Masteries",
+            "Classes",
+            "Subclasses",
+            "Spells",
+            "Items",
+            "Bestiary",
+            "Shapeshifter Forms"
+          ]
         }
       ]
     }
@@ -310,6 +320,11 @@
             {
               "type": "entries",
               "name": "Items",
+              "entries": [{ "type": "list", "columns": 3, "items": [] }]
+            },
+            {
+              "type": "entries",
+              "name": "Bestiary",
               "entries": [{ "type": "list", "columns": 3, "items": [] }]
             },
             {

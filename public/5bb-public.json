@@ -12,7 +12,7 @@
       }
     ],
     "dateAdded": 1776156420,
-    "dateLastModified": 1777232592,
+    "dateLastModified": 1777308496,
     "edition": "one",
     "status": "wip"
   },
@@ -267,7 +267,16 @@
         {
           "name": "Appendix",
           "ordinal": { "type": "appendix", "identifier": 1 },
-          "headers": ["Ancestries", "Feats", "Item Masteries", "Classes", "Subclasses", "Items", "Shapeshifter Forms"]
+          "headers": [
+            "Ancestries",
+            "Feats",
+            "Item Masteries",
+            "Classes",
+            "Subclasses",
+            "Items",
+            "Bestiary",
+            "Shapeshifter Forms"
+          ]
         }
       ]
     }
@@ -551,6 +560,7 @@
                   "type": "list",
                   "columns": 3,
                   "items": [
+                    "{@subclass Familiar Patron|Wizard|XPHB|5BBPublic}",
                     "{@subclass Multielemental Hexblade|Warlock|XPHB|5BBPublic}",
                     "{@subclass Silencari Assassin|Rogue|XPHB|5BBPublic}"
                   ]
@@ -576,6 +586,11 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "entries",
+              "name": "Bestiary",
+              "entries": [{ "type": "list", "columns": 3, "items": ["{@creature Daisy|5BBPublic}"] }]
             },
             {
               "type": "entries",
@@ -13668,6 +13683,72 @@
           ]
         }
       }
+    },
+    {
+      "name": "Daisy",
+      "source": "5BBPublic",
+      "size": ["T"],
+      "type": "fey",
+      "ac": [{ "special": "16 + PB" }],
+      "hp": { "special": "3 + 3 times your wizard level" },
+      "summonedScaleByPlayerLevel": true,
+      "speed": { "walk": 10, "fly": 40 },
+      "str": 2,
+      "dex": 17,
+      "con": 8,
+      "int": 9,
+      "wis": 12,
+      "cha": 14,
+      "skill": { "arcana": "-1 + PB", "perception": "1 + PB" },
+      "passive": "11 + PB",
+      "senses": ["Darkvision 60 ft."],
+      "senseTags": ["D"],
+      "languages": ["Common", "Elvish", "Sylvan"],
+      "conditionImmune": ["charmed", "frightened"],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "Daisy has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Flyby",
+          "entries": [
+            "Daisy doesn't provoke an {@action Opportunity Attack|XPHB} when she flies out of an enemy's reach."
+          ]
+        }
+      ],
+      "traitTags": ["Magic Resistance", "Flyby"],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "type": "spellcasting",
+          "headerEntries": [
+            "Daisy casts one of the following spells, requiring no Material components and using Charisma as her spellcast ability (spell save {@dc 10 plus PB}):"
+          ],
+          "will": [
+            "{@spell Dancing Lights|XPHB}",
+            "{@spell Druidcraft|XPHB}",
+            "{@spell Invisibility|XPHB} (self only)"
+          ],
+          "daily": { "1e": ["{@spell Detect Thoughts|XPHB}", "{@spell Blink|XPHB}"] },
+          "ability": "cha",
+          "displayAs": "action"
+        }
+      ],
+      "action": [
+        {
+          "name": "Pixie Dust Marble",
+          "entries": [
+            "{@atkr r} {@hit 3 plus PB}, range 20/60 ft. {@h}Roll {@dice 1d100} and consult the Pixie Dust Marble table to determine the effect of the attack."
+          ]
+        }
+      ],
+      "damageTags": ["P"],
+      "spellcastingTags": ["O"],
+      "miscTags": ["RA"],
+      "conditionInflictSpell": ["invisible"]
     }
   ],
   "class": [
@@ -14351,6 +14432,14 @@
         "Envenom Weapons|Rogue|XPHB|Silencari Assassin|5BBPublic|13|5BBPublic",
         "Death Strike|Rogue|XPHB|Silencari Assassin|5BBPublic|17|5BBPublic"
       ]
+    },
+    {
+      "name": "Familiar Patron",
+      "shortName": "Familiar Patron",
+      "source": "5BBPublic",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "subclassFeatures": ["Familiar Patron|Wizard|XPHB|Familiar Patron|5BBPublic|3|5BBPublic"]
     }
   ],
   "subclassFeature": [
@@ -14591,6 +14680,50 @@
       "subclassSource": "5BBPublic",
       "level": 17,
       "entries": [{ "type": "refSubclassFeature", "subclassFeature": "Death Strike|Rogue|XPHB|Assassin|XPHB|17|XPHB" }]
+    },
+    {
+      "name": "Familiar Patron",
+      "source": "5BBPublic",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "subclassShortName": "Familiar Patron",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Patron Familiar|Wizard|XPHB|Familiar Patron|5BBPublic|3|5BBPublic"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Arcane Familiar|Wizard|XPHB|Familiar Patron|5BBPublic|3|5BBPublic"
+        }
+      ]
+    },
+    {
+      "name": "Patron Familiar",
+      "source": "5BBPublic",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "subclassShortName": "Familiar Patron",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "As a {@action Magic|XPHB} action, you can expend a spell slot to cast the {@spell Find Familiar|XPHB} spell without Material components, summoning your Patron Familiar with the {@creature Daisy|5BBPublic|stat block variant} of your current wizard level.",
+        "In combat, your Patron Familiar shares your {@variantrule Initiative|XPHB} count and can take all actions (including the {@action Attack|XPHB} action) as normal, but can't make opportunity attacks."
+      ]
+    },
+    {
+      "name": "Arcane Familiar",
+      "source": "5BBPublic",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "subclassShortName": "Familiar Patron",
+      "subclassSource": "5BBPublic",
+      "level": 3,
+      "entries": [
+        "The arcane connection between you and your Patron Familiar allows you to use them as an extension of yourself in your own spellcasting. You can cast spells as though you were in the Familiar's space, as long as they are within 100 feet of you. Your Familiar then takes the {@action Magic|XPHB} action to deliver the spell. They use your spellcasting ability modifier, spell save DC and {@status Concentration|XPHB}, but does otherwise count as the caster of the spell."
+      ]
     }
   ]
 }
