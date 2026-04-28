@@ -127,7 +127,7 @@
         {
           "name": "Pixie Dust Marble",
           "entries": [
-            "{@atkr r} {@hit 3 plus PB}, range 20/60 ft. {@h}Roll {@dice 1d100} and consult the Pixie Dust Marble table to determine the effect of the attack."
+            "{@atkr r} {@hit 3 plus PB}, range 20/60 ft. {@h}Roll {@dice 1d100} and consult the {@table Pixie Dust Marble|5BBPrivate} table to determine the effect of the attack."
           ]
         }
       ],

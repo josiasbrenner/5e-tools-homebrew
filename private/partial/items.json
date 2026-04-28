@@ -23,6 +23,24 @@
         },
         {
           "type": "entries",
+          "name": "While Attuned",
+          "entries": [
+            "While attuned to the Artifact, it adjusts the following aspects of your body and mind:",
+            {
+              "type": "list",
+              "items": [
+                "You loos all sense of smell.",
+                "You kill any nonmagical vegetation you touch that isn't a creature.",
+                "You have resistance to Necrotic damage.",
+                "You have vulnerability to Radiant damage.",
+                "You have advantage on saving throws against being {@condition Poisoned|XPHB} or {@condition Frightened|XPHB}.",
+                "You gain a +1 bonus to spell attack rolls and the saving throw DCs of spells you cast from the Necromancy school of magic."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
           "name": "While Unattuned",
           "entries": [
             "At initiative count 20 on every round, every creature within 30 ft. of the necklace takes {@damage 1d6} Necrotic damage. Undead and constructs are immune to this damage. This effect passes through total cover, but not through lead. A creature can stop this effect by starting the process of attuning to the necklace."
